@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import https from "https";
+import http from "http";
 
 interface BlogImageConfig {
   slug: string;
@@ -35,10 +36,10 @@ async function downloadImage(url: string, filepath: string): Promise<void> {
       }
 
       const urlObj = new URL(currentUrl);
-      const protocol = urlObj.protocol === "https:" ? https : require("http");
+      const protocol = urlObj.protocol === "https:" ? https : http;
 
       protocol
-        .get(currentUrl, (response) => {
+        .get(currentUrl, (response: http.IncomingMessage) => {
           if (response.statusCode === 301 || response.statusCode === 302) {
             const redirectUrl = response.headers.location;
             if (redirectUrl) {
@@ -57,7 +58,7 @@ async function downloadImage(url: string, filepath: string): Promise<void> {
             reject(new Error(`HTTP ${response.statusCode}`));
           }
         })
-        .on("error", (err) => {
+        .on("error", (err: Error) => {
           fs.unlink(filepath, () => {});
           reject(err);
         });
