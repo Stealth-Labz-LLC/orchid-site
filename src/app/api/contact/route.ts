@@ -3,6 +3,18 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
   try {
+    // Check environment variables
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+      console.error("Missing Supabase environment variables");
+      return NextResponse.json(
+        {
+          error: "Server configuration error",
+          details: "Supabase environment variables are not configured"
+        },
+        { status: 500 }
+      );
+    }
+
     const body = await request.json();
     const { name, email, company, phone, service, message } = body;
 
@@ -63,7 +75,11 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error("Error processing contact form:", error);
     return NextResponse.json(
-      { error: "Internal server error" },
+      {
+        error: "Internal server error",
+        details: error instanceof Error ? error.message : "Unknown error",
+        stack: process.env.NODE_ENV === "development" ? (error instanceof Error ? error.stack : undefined) : undefined
+      },
       { status: 500 }
     );
   }
