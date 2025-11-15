@@ -13,70 +13,70 @@ import "../../../public/css/pages/pricing.css";
 
 const pricingPlans = [
   {
-    name: "Starter",
-    description: "Perfect for small teams and startups getting started",
-    monthlyPrice: 29,
-    annualPrice: 23,
+    name: "Startup",
+    description: "Perfect for startups and small projects",
+    monthlyPrice: 2000,
+    annualPrice: 4500,
     features: [
-      "Up to 5 team members",
-      "10 GB storage",
-      "Basic analytics",
-      "Email support",
-      "API access (1,000 calls/day)",
-      "SSL encryption",
-      "Mobile app access",
-      "30-day data retention",
+      "Up to 1 developers",
+      "Part-time engagement (20 hrs/week)",
+      "Web or mobile app development",
+      "Basic cloud deployment",
+      "Email & chat support",
+      "Bi-weekly sprint cycles",
+      "Code repository access",
+      "Monthly progress reports",
     ],
-    ctaText: "Start Free Trial",
-    ctaLink: "/signup?plan=starter",
+    ctaText: "Get Started",
+    ctaLink: "/contact",
     isPopular: false,
   },
   {
-    name: "Professional",
-    description: "For growing teams that need advanced features",
-    monthlyPrice: 79,
-    annualPrice: 63,
+    name: "Growth",
+    description: "For growing businesses that need dedicated teams",
+    monthlyPrice: 6000,
+    annualPrice: 8800,
     features: [
-      "Up to 25 team members",
-      "100 GB storage",
-      "Advanced analytics & reporting",
-      "Priority email support",
-      "API access (10,000 calls/day)",
-      "Custom domain",
-      "Advanced integrations",
-      "1-year data retention",
-      "SOC 2 compliance",
-      "Team collaboration tools",
-      "Custom workflows",
-      "Audit logs",
+      "Up to 2 developers",
+      "Full-time engagement (160 hrs/month)",
+      "Custom software development",
+      "Cloud architecture & DevOps",
+      "Database design & optimization",
+      "Priority support (24/5)",
+      "Weekly sprint cycles",
+      "API development & integration",
+      "Security best practices",
+      "Performance optimization",
+      "Technical documentation",
+      "Agile project management",
     ],
-    ctaText: "Start Free Trial",
-    ctaLink: "/signup?plan=professional",
+    ctaText: "Get Started",
+    ctaLink: "/contact",
     isPopular: true,
   },
   {
     name: "Enterprise",
-    description: "For large organizations with custom needs",
-    monthlyPrice: 299,
-    annualPrice: 239,
+    description: "For large-scale projects with custom requirements",
+    monthlyPrice: 25000,
+    annualPrice: 22500,
     features: [
-      "Unlimited team members",
-      "Unlimited storage",
-      "Custom analytics & reports",
-      "24/7 phone & email support",
-      "Unlimited API calls",
-      "SSO/SAML authentication",
-      "White label options",
-      "Unlimited data retention",
-      "Dedicated account manager",
+      "Dedicated team (6+ developers)",
+      "Full-stack development",
+      "AI & Machine Learning integration",
+      "Advanced cloud infrastructure",
+      "24/7 priority support",
+      "Security audits & compliance",
+      "Microservices architecture",
       "Custom integrations",
+      "Dedicated account manager",
+      "On-site collaboration available",
       "SLA guarantees",
-      "On-premise deployment option",
-      "Custom contracts & invoicing",
-      "Advanced security features",
+      "Scalability planning",
+      "Technical consulting",
+      "Legacy system migration",
     ],
     ctaText: "Contact Sales",
-    ctaLink: "/contact-sales",
+    ctaLink: "/contact",
     isPopular: false,
   },
 ];
@@ -100,15 +100,15 @@ export default function PricingPage() {
             </div>
 
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-              Choose the{" "}
+              Flexible{" "}
               <span className="bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent">
-                Perfect Plan
+                Engagement Models
               </span>{" "}
-              for Your Team
+              for Your Project
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground sm:text-xl">
-              Start with a 14-day free trial. No credit card required. Cancel anytime.
+              Choose from our flexible monthly retainer plans or contact us for custom project-based pricing.
             </p>
 
             <div className="mt-10">
@@ -139,9 +139,9 @@ export default function PricingPage() {
 
         <div className="pricing-trial-notice">
           <p>
-            All plans include 14-day free trial •{" "}
-            <span className="pricing-trial-notice-highlight">No credit card required</span> • Cancel
-            anytime
+            Flexible monthly retainers •{" "}
+            <span className="pricing-trial-notice-highlight">Save 10% with annual commitment</span> •{" "}
+            Custom pricing available
           </p>
         </div>
       </section>
