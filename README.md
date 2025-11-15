@@ -127,7 +127,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 1. Push your code to GitHub
 2. Import your repository to Vercel
-3. Add your environment variables
+3. Add your 
+s
 4. Deploy!
 
 ### Environment Variables for Production
