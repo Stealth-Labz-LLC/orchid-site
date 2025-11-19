@@ -22,18 +22,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}
-        <Script
-            src="https://track-mate-pi.vercel.app//tracking-snippet.js"
-            strategy="afterInteractive"
-            onLoad={() => {
-              if (window.TrackMate) {
-                window.TrackMate.init({
-                  apiUrl: 'https://your-trackmate-api.vercel.app/api/track',
-                  companyId: 'TM-YXL25'
-                });
-              }
-            }}
-          />
       </body>
     </html>
   );
