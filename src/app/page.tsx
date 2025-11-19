@@ -5,9 +5,10 @@ import { Features } from "@/components/landing/features";
 import { CTA } from "@/components/landing/cta";
 import { Footer } from "@/components/landing/footer";
 import type { Metadata } from "next";
+import { generateMetadata as genMeta } from "@/lib/seo";
 import "../../public/css/pages/home.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = genMeta({
   title: "Orchid Software - Expert Software Engineering Services | SaaS Solutions",
   description:
     "Build powerful SaaS solutions with our world-class engineering team. From concept to deployment, we deliver scalable, secure, and innovative software. Start your free trial today.",
@@ -18,14 +19,12 @@ export const metadata: Metadata = {
     "enterprise software",
     "cloud solutions",
     "software development company",
+    "web application development",
+    "mobile app development",
   ],
-  openGraph: {
-    title: "Orchid Software - Expert Software Engineering Services",
-    description:
-      "Build powerful SaaS solutions with our world-class engineering team. Start your free trial today.",
-    type: "website",
-  },
-};
+  url: "/",
+  type: "website",
+});
 
 export default function Home() {
   return (

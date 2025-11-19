@@ -5,8 +5,9 @@ import { ContactForm } from "@/components/contact/contact-form";
 import { OfficeInfo } from "@/components/contact/office-info";
 import { SocialLinks } from "@/components/contact/social-links";
 import { MessageSquare, Headphones, Clock } from "lucide-react";
+import { generateMetadata as genMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = genMeta({
   title: "Contact Us - Get in Touch with Our Team",
   description:
     "Have questions about our software engineering services? Contact Orchid Software today. We're here to help you build amazing SaaS products.",
@@ -16,13 +17,11 @@ export const metadata: Metadata = {
     "support",
     "customer service",
     "sales inquiry",
+    "software development consultation",
   ],
-  openGraph: {
-    title: "Contact Orchid Software - Get in Touch",
-    description: "Reach out to our team for questions, support, or to discuss your next project.",
-    type: "website",
-  },
-};
+  url: "/contact",
+  type: "website",
+});
 
 export default function ContactPage() {
   return (

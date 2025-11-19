@@ -6,9 +6,10 @@ import { Values } from "@/components/about/values";
 import { Statistics } from "@/components/about/statistics";
 // import { Team } from "@/components/about/team";
 import { BannerCTA } from "@/components/cta/banner-cta";
+import { generateMetadata as genMeta } from "@/lib/seo";
 import "../../../public/css/pages/about.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = genMeta({
   title: "About Us - Our Mission, Values & Team",
   description:
     "Learn about Orchid Software's mission to build the future of software. Meet our team of expert engineers and discover the values that drive us every day.",
@@ -18,14 +19,12 @@ export const metadata: Metadata = {
     "company mission",
     "our values",
     "engineering team",
+    "software development company",
+    "tech startup",
   ],
-  openGraph: {
-    title: "About Orchid Software - Our Mission, Values & Team",
-    description:
-      "Learn about our mission to build exceptional software and meet the team behind Orchid Software.",
-    type: "website",
-  },
-};
+  url: "/about-us",
+  type: "website",
+});
 
 export default function AboutPage() {
   return (

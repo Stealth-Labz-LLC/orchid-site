@@ -5,9 +5,10 @@ import { Footer } from "@/components/landing/footer";
 import { BannerCTA } from "@/components/cta/banner-cta";
 import { Code2, Database, Cloud, Shield, Zap, Sparkles } from "lucide-react";
 import { unsplashImages } from "@/lib/images";
+import { generateMetadata as genMeta } from "@/lib/seo";
 import "../../../public/css/pages/services.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = genMeta({
   title: "Our Services - Software Engineering Solutions",
   description:
     "Explore our comprehensive software engineering services. From custom development to cloud architecture, we deliver solutions that drive business growth.",
@@ -16,8 +17,14 @@ export const metadata: Metadata = {
     "custom development",
     "cloud solutions",
     "API development",
+    "database design",
+    "DevOps services",
+    "security consulting",
+    "AI and machine learning",
   ],
-};
+  url: "/services",
+  type: "website",
+});
 
 const services = [
   {

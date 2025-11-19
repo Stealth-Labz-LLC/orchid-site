@@ -6,14 +6,26 @@ import { Footer } from "@/components/landing/footer";
 import { InlineCTA } from "@/components/cta/inline-cta";
 import { Calendar, Clock, User, BookOpen } from "lucide-react";
 import { getAllPosts, getAllCategories } from "@/lib/blog";
+import { generateMetadata as genMeta } from "@/lib/seo";
 import "../../../public/css/pages/blog.css";
 
-export const metadata: Metadata = {
-  title: "Blog - Insights & Updates",
+export const metadata: Metadata = genMeta({
+  title: "Blog - Insights & Updates on Software Engineering",
   description:
-    "Stay updated with the latest insights, tutorials, and news from Orchid Software. Learn about software engineering best practices and industry trends.",
-  keywords: ["blog", "software engineering", "tutorials", "tech insights", "industry news"],
-};
+    "Stay updated with the latest insights, tutorials, and news from Orchid Software. Learn about software engineering best practices, industry trends, and development tips.",
+  keywords: [
+    "blog",
+    "software engineering",
+    "tutorials",
+    "tech insights",
+    "industry news",
+    "development tips",
+    "programming best practices",
+    "SaaS development",
+  ],
+  url: "/blog",
+  type: "website",
+});
 
 function formatDate(dateString: string): string {
   const date = new Date(dateString);

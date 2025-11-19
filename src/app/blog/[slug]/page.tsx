@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import Script from "next/script";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { Calendar, Clock, User, ArrowLeft, Tag } from "lucide-react";
 import rehypeHighlight from "rehype-highlight";
@@ -10,6 +11,7 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { Header } from "@/components/landing/header";
 import { Footer } from "@/components/landing/footer";
 import { getPostBySlug, getAllPostSlugs, getRelatedPosts } from "@/lib/blog";
+import { generateMetadata as genMeta, generateArticleSchema } from "@/lib/seo";
 import "highlight.js/styles/github-dark.css";
 import "../../../../public/css/pages/blog-post.css";
 
@@ -33,19 +35,16 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     };
   }
 
-  return {
-    title: `${post.title} - Orchid Software Blog`,
+  return genMeta({
+    title: `${post.title}`,
     description: post.excerpt,
     keywords: post.tags,
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      type: "article",
-      publishedTime: post.date,
-      authors: [post.author],
-      images: post.image ? [post.image] : [],
-    },
-  };
+    image: post.image,
+    url: `/blog/${params.slug}`,
+    type: "article",
+    publishedTime: post.date,
+    authors: [post.author],
+  });
 }
 
 function formatDate(dateString: string): string {
@@ -106,8 +105,25 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
   const relatedPosts = getRelatedPosts(post.slug, post.category);
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  const articleSchema = generateArticleSchema({
+    title: post.title,
+    description: post.excerpt,
+    image: post.image || `${baseUrl}/images/og-image.png`,
+    datePublished: post.date,
+    author: post.author,
+    url: `${baseUrl}/blog/${params.slug}`,
+  });
+
   return (
     <main className="blog-post-page">
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
       <Header />
 
       {/* Hero Section */}
