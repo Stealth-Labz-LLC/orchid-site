@@ -48,7 +48,7 @@ export function Footer() {
             <h3 className="footer-section-heading">Quick Links</h3>
             <ul className="footer-section-list">
               <li><Link href="/" className="footer-link">Home</Link></li>
-              <li><Link href="/about" className="footer-link">About Us</Link></li>
+              <li><Link href="/about-us" className="footer-link">About Us</Link></li>
               <li><Link href="/pricing" className="footer-link">Pricing</Link></li>
               <li><Link href="/contact" className="footer-link">Contact</Link></li>
               <li><Link href="/blog" className="footer-link">Blog</Link></li>
@@ -86,8 +86,8 @@ export function Footer() {
               <li><Link href="/privacy" className="footer-link">Privacy Policy</Link></li>
               <li><Link href="/terms" className="footer-link">Terms of Service</Link></li>
               <li><Link href="/cookies" className="footer-link">Cookie Policy</Link></li>
-              <li><Link href="/about" className="footer-link">Careers</Link></li>
-              <li><Link href="/about" className="footer-link">Press Kit</Link></li>
+              <li><Link href="/about-us" className="footer-link">Careers</Link></li>
+              <li><Link href="/about-us" className="footer-link">Press Kit</Link></li>
             </ul>
           </div>
         </div>
