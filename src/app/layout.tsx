@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   },
   description: "Transform your business with our cutting-edge SaaS solution",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  icons: {
+    icon: '/images/logo/favicon.png',
+  },
 };
 
 export default function RootLayout({
