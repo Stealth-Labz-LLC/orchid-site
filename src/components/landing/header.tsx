@@ -11,11 +11,15 @@ import "../../../public/css/components/header.css";
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Services", href: "/services" },
-  { name: "Pricing", href: "/pricing" },
   { name: "About", href: "/about-us" },
   { name: "Contact", href: "/contact" },
   { name: "Blog", href: "/blog" },
 ];
+
+const ctaButton = {
+  name: "Get Started",
+  href: "/pricing",
+};
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -61,16 +65,21 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <div className="nav-desktop">
-          {navItems.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className={cn("nav-link", isActive(item.href) ? "active" : "inactive")}
-            >
-              {item.name}
-              {isActive(item.href) && <span className="nav-link-indicator" />}
-            </Link>
-          ))}
+          <div className="nav-links-group">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={cn("nav-link", isActive(item.href) ? "active" : "inactive")}
+              >
+                {item.name}
+                {isActive(item.href) && <span className="nav-link-indicator" />}
+              </Link>
+            ))}
+          </div>
+          <Link href={ctaButton.href} className="cta-button">
+            {ctaButton.name}
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -100,6 +109,9 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
+            <Link href={ctaButton.href} className="mobile-cta-button">
+              {ctaButton.name}
+            </Link>
           </div>
         </div>
       )}
