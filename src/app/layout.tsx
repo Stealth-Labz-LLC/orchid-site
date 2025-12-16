@@ -137,7 +137,7 @@ export default function RootLayout({
         <Script
           id="traffic-ai-pixel"
           strategy="afterInteractive"
-          src="https://app.trafficai.io/pixel.js"
+          src="https://app.trafficai.io/pixel.js?v=1.0.1"
         />
       </body>
     </html>
