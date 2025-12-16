@@ -116,29 +116,30 @@ export default function RootLayout({
           }}
         />
         
+      </head>
+      <body className={inter.className}>
+        {children}
+
         {/* Traffic AI Pixel - Orchid */}
         <Script
-          id="traffic-ai-pixel"
-          strategy="afterInteractive"
+          id="traffic-ai-init"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              (function(t,r,a,f,i,c){
-                t.TrafficAI=t.TrafficAI||[];
-                t.TrafficAI.push({
-                  'pixelId':'px_gxp29eh2arv90k3i',
-                  'endpoint':'https://app.trafficai.io/api/pixel/track'
-                });
-                var s=r.createElement('script');
-                s.async=true;
-                s.src='https://app.trafficai.io/pixel.js';
-                var x=r.getElementsByTagName('script')[0];
-                x.parentNode.insertBefore(s,x);
-              })(window,document);
+              window.TrafficAI = window.TrafficAI || [];
+              window.TrafficAI.push({
+                'pixelId': 'px_gxp29eh2arv90k3i',
+                'endpoint': 'https://app.trafficai.io/api/pixel/track'
+              });
             `,
           }}
         />
-      </head>
-      <body className={inter.className}>{children}</body>
+        <Script
+          id="traffic-ai-pixel"
+          strategy="afterInteractive"
+          src="https://app.trafficai.io/pixel.js"
+        />
+      </body>
     </html>
   );
 }
