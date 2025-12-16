@@ -115,8 +115,9 @@ export default function RootLayout({
             __html: JSON.stringify(websiteSchema),
           }}
         />
-        
+
       </head>
+      
       <body className={inter.className}>
         {children}
 
