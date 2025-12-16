@@ -115,6 +115,7 @@ export default function RootLayout({
             __html: JSON.stringify(websiteSchema),
           }}
         />
+        
         {/* Traffic AI Pixel - Orchid */}
         <Script
           id="traffic-ai-pixel"
