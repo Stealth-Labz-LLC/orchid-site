@@ -13,7 +13,7 @@ const blogImages: BlogImageConfig[] = [
   {
     slug: "api-security-best-practices",
     searchQuery: "api security cybersecurity",
-    filename: "api-security.jpg",
+    filename: "api-security1.jpeg",
   },
   {
     slug: "building-scalable-saas-applications",
