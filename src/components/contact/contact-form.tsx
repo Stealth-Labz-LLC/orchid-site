@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Send, CheckCircle2 } from "lucide-react";
+import { trackFormSubmission } from "@/lib/trackmate";
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -35,6 +36,9 @@ export function ContactForm() {
       if (!response.ok) {
         throw new Error(result.error || "Failed to submit form");
       }
+
+      // Track form submission in TrackMate
+      trackFormSubmission(formData, "contact_form");
 
       setIsSubmitting(false);
       setIsSubmitted(true);

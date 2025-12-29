@@ -3,6 +3,7 @@ import Script from 'next/script'
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { generateOrganizationSchema, generateWebsiteSchema } from "@/lib/seo";
+import { TrackMateScroll } from "@/components/tracking/trackmate-scroll";
 
 const inter = Inter({ subsets: ["latin"] });
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
@@ -127,6 +128,9 @@ export default function RootLayout({
 
       <body className={inter.className}>
         {children}
+
+        {/* TrackMate Scroll Tracking */}
+        <TrackMateScroll />
 
         {/* Traffic AI Pixel - Orchid */}
         <Script

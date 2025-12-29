@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Calendar, CheckCircle2 } from "lucide-react";
+import { trackFormSubmission } from "@/lib/trackmate";
 
 interface DemoRequestModalProps {
   open: boolean;
@@ -47,6 +48,9 @@ export function DemoRequestModal({ open, onOpenChange }: DemoRequestModalProps) 
       if (!response.ok) {
         throw new Error(result.error || "Failed to submit form");
       }
+
+      // Track form submission in TrackMate
+      trackFormSubmission(formData, "demo_request_form");
 
       setIsSubmitting(false);
       setIsSubmitted(true);
