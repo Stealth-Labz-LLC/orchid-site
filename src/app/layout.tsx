@@ -132,24 +132,12 @@ export default function RootLayout({
         {/* TrackMate Scroll Tracking */}
         <TrackMateScroll />
 
-        {/* Traffic AI Pixel - Orchid */}
+        {/* Identity Pixel Tracking */}
         <Script
-          id="traffic-ai-init"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.TrafficAI = window.TrafficAI || [];
-              window.TrafficAI.push({
-                'pixelId': 'px_gxp29eh2arv90k3i',
-                'endpoint': 'https://app.trafficai.io/api/pixel/track'
-              });
-            `,
-          }}
-        />
-        <Script
-          id="traffic-ai-pixel"
+          id="identity-pixel"
+          src="https://cdn.v3.identitypxl.app/pixels/588b2ebe-b6ec-4a0d-b896-fc29986afe74/p.js"
           strategy="afterInteractive"
-          src="https://app.trafficai.io/pixel.js?v=1.0.1"
+          async
         />
       </body>
     </html>
