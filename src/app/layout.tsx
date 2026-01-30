@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Script from 'next/script'
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { generateOrganizationSchema, generateWebsiteSchema } from "@/lib/seo";
+import { generateOrganizationSchema, generateWebsiteSchema, generateLocalBusinessSchema, ogImages } from "@/lib/seo";
 import { TrackMateScroll } from "@/components/tracking/trackmate-scroll";
 
 const inter = Inter({ subsets: ["latin"] });
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://orchidsw.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'en_IN',
     url: siteUrl,
     siteName: 'Orchid Software',
-    title: 'Orchid Software - Expert Software Engineering Services',
-    description: 'Transform your business with cutting-edge SaaS solutions and expert software engineering services.',
+    title: 'Orchid Software - Expert Software Engineering Services | India',
+    description: 'Transform your business with cutting-edge SaaS solutions and expert software engineering services. Custom software development, cloud solutions, and AI/ML services.',
     images: [
       {
-        url: `${siteUrl}/images/og-image.png`,
+        url: `${siteUrl}${ogImages.home}`,
         width: 1200,
         height: 630,
         alt: 'Orchid Software - Expert Software Engineering Services',
@@ -55,8 +55,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Orchid Software - Expert Software Engineering Services',
     description: 'Transform your business with cutting-edge SaaS solutions and expert software engineering services.',
-    images: [`${siteUrl}/images/og-image.png`],
+    images: [`${siteUrl}${ogImages.home}`],
     creator: '@OrchidSoftware',
+    site: '@OrchidSoftware',
   },
   robots: {
     index: true,
@@ -82,21 +83,23 @@ export default function RootLayout({
 }>) {
   const organizationSchema = generateOrganizationSchema({
     name: "Orchid Software",
-    description: "Expert software engineering services and SaaS solutions",
+    description: "Expert software engineering services and SaaS solutions. Custom software development, cloud architecture, AI/ML solutions, and digital transformation services in India.",
     url: siteUrl,
-    logo: `${siteUrl}/images/logo/favicon-new.svg`,
+    logo: `${siteUrl}/images/logo/orchid_logo_new.svg`,
     contactPoint: {
-      telephone: "9079003238",
+      telephone: "+91-9079003238",
       contactType: "Customer Service",
       email: "info@orchidsw.com",
     },
     sameAs: [
       "https://www.linkedin.com/company/orchid-software",
       "https://www.facebook.com/orchidsw",
+      "https://t.me/orchid_software",
     ],
   });
 
   const websiteSchema = generateWebsiteSchema(siteUrl, "Orchid Software");
+  const localBusinessSchema = generateLocalBusinessSchema();
 
   return (
     <html lang="en">
@@ -113,6 +116,13 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(websiteSchema),
+          }}
+        />
+        <Script
+          id="local-business-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
           }}
         />
 

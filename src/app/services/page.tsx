@@ -18,19 +18,23 @@ import {
 import { generateMetadata as genMeta } from "@/lib/seo";
 
 export const metadata: Metadata = genMeta({
-  title: "Our Services - Enterprise Software Engineering Solutions",
+  title: "Our Services - Enterprise Software Engineering Solutions | India",
   description:
-    "Explore our comprehensive software engineering services. From custom development to cloud architecture, we deliver enterprise solutions that drive business growth.",
+    "Explore our comprehensive software engineering services in India. Custom development, cloud architecture, AI/ML solutions, and digital transformation services that drive business growth.",
   keywords: [
-    "software engineering services",
-    "custom development",
+    "software engineering services India",
+    "custom software development",
     "cloud solutions",
     "enterprise software",
     "digital transformation",
-    "AI solutions",
+    "AI solutions India",
+    "web development services",
+    "mobile app development",
+    "DevOps services",
   ],
   url: "/services",
   type: "website",
+  image: "/images/services/service-og.webp",
 });
 
 const services = [

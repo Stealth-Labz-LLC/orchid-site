@@ -17,18 +17,21 @@ import {
 import { generateMetadata as genMeta } from "@/lib/seo";
 
 export const metadata: Metadata = genMeta({
-  title: "About Us - Enterprise Software Solutions Partner",
+  title: "About Us - Enterprise Software Solutions Partner | Patna, India",
   description:
-    "Learn about Orchid Software's mission to deliver enterprise-grade software solutions. Meet our team of expert engineers and discover the values that drive us.",
+    "Learn about Orchid Software's mission to deliver enterprise-grade software solutions. 10+ years of experience, 500+ satisfied clients, and expert engineers in India.",
   keywords: [
     "about orchid software",
-    "enterprise software company",
-    "software engineering team",
+    "enterprise software company India",
+    "software engineering team Patna",
     "company mission",
-    "software development partner",
+    "software development partner Bihar",
+    "IT company India",
+    "tech startup Patna",
   ],
   url: "/about-us",
   type: "website",
+  image: "/images/about/about-og.jpeg",
 });
 
 const values = [

@@ -8,19 +8,22 @@ import { getAllPosts, getAllCategories } from "@/lib/blog";
 import { generateMetadata as genMeta } from "@/lib/seo";
 
 export const metadata: Metadata = genMeta({
-  title: "Blog - Insights & Updates on Enterprise Software",
+  title: "Blog - Software Engineering Insights & Tutorials | Orchid Software",
   description:
-    "Stay updated with the latest insights, tutorials, and news from Orchid Software. Learn about software engineering best practices, industry trends, and development tips.",
+    "Stay updated with the latest insights, tutorials, and news from Orchid Software. Learn about software engineering best practices, cloud architecture, AI/ML, and development tips.",
   keywords: [
-    "blog",
-    "software engineering",
-    "enterprise software",
-    "tech insights",
+    "software engineering blog",
+    "tech blog India",
+    "enterprise software tutorials",
+    "cloud architecture guides",
     "development tips",
     "industry trends",
+    "coding best practices",
+    "SaaS development",
   ],
   url: "/blog",
   type: "website",
+  image: "/images/blog/blog-og.jpeg",
 });
 
 function formatDate(dateString: string): string {

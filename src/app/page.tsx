@@ -13,21 +13,25 @@ import { generateMetadata as genMeta } from "@/lib/seo";
 import "../../public/css/pages/home.css";
 
 export const metadata: Metadata = genMeta({
-  title: "Orchid Software - Enterprise Software Solutions | Digital Transformation",
+  title: "Orchid Software - Enterprise Software Solutions | India",
   description:
-    "Partner with Orchid Software to build secure, scalable enterprise applications. Custom software development, cloud architecture, AI solutions, and digital transformation services.",
+    "Partner with Orchid Software to build secure, scalable enterprise applications. Custom software development, cloud architecture, AI solutions, and digital transformation services in India.",
   keywords: [
     "enterprise software solutions",
-    "custom software development",
-    "digital transformation",
-    "cloud architecture",
+    "custom software development India",
+    "digital transformation services",
+    "cloud architecture India",
     "AI solutions",
-    "software development company",
+    "software development company India",
     "enterprise applications",
     "business transformation",
+    "SaaS development",
+    "web development Patna",
+    "IT services Bihar",
   ],
   url: "/",
   type: "website",
+  image: "/images/home/1.webp",
 });
 
 export default function Home() {

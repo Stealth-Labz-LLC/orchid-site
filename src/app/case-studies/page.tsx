@@ -6,9 +6,30 @@ import { Footer } from "@/components/landing/footer";
 import { ArrowRight, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Case Studies - Client Success Stories | Orchid Software",
+  title: "Case Studies - Client Success Stories | Orchid Software India",
   description:
-    "Explore how Orchid Software has helped businesses transform their operations with custom software solutions. Real results from real clients.",
+    "Explore how Orchid Software has helped businesses transform their operations with custom software solutions. Real results from TrafficAi, Stealth Labz, Shiksha, and more.",
+  keywords: [
+    "case studies",
+    "client success stories",
+    "software development portfolio",
+    "TrafficAi",
+    "Stealth Labz",
+    "Shiksha",
+    "enterprise software projects",
+  ],
+  openGraph: {
+    title: "Case Studies - Client Success Stories | Orchid Software",
+    description: "Explore how Orchid Software has helped businesses transform their operations with custom software solutions.",
+    images: [
+      {
+        url: "/images/common/common-og.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Orchid Software Case Studies",
+      },
+    ],
+  },
 };
 
 const caseStudies = [

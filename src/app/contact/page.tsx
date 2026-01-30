@@ -13,18 +13,21 @@ import {
 import { generateMetadata as genMeta } from "@/lib/seo";
 
 export const metadata: Metadata = genMeta({
-  title: "Contact Us - Get in Touch with Our Team",
+  title: "Contact Us - Get in Touch | Orchid Software India",
   description:
-    "Have questions about our software engineering services? Contact Orchid Software today. We're here to help you build amazing enterprise solutions.",
+    "Have questions about our software engineering services? Contact Orchid Software in Patna, India. Get a free consultation for your software development project.",
   keywords: [
     "contact orchid software",
-    "get in touch",
-    "support",
-    "sales inquiry",
     "software development consultation",
+    "IT services Patna",
+    "software company Bihar",
+    "free consultation",
+    "project inquiry",
+    "get quote software development",
   ],
   url: "/contact",
   type: "website",
+  image: "/images/contact/contact-og.jpeg",
 });
 
 const contactMethods = [

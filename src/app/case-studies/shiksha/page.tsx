@@ -243,7 +243,7 @@ export default function ShikshaCaseStudy() {
             </blockquote>
             <div>
               <p className="font-semibold text-slate-900">School Administrator</p>
-              <p className="text-slate-500">Private School, Bihar</p>
+              <p className="text-slate-500">St. Andrews Academy, Bihar</p>
             </div>
           </div>
         </div>
