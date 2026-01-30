@@ -13,7 +13,7 @@ const values = [
     title: "Innovation First",
     description:
       "We continuously push boundaries and embrace new technologies to deliver cutting-edge solutions that keep our clients ahead of the curve.",
-    gradient: "from-orange-500 to-amber-500",
+    gradient: "from-blue-500 to-sky-500",
   },
   {
     icon: Shield,
@@ -27,28 +27,28 @@ const values = [
     title: "Client Success",
     description:
       "Your success is our success. We work as an extension of your team, ensuring every project delivers measurable business value and exceeds expectations.",
-    gradient: "from-orange-600 to-red-500",
+    gradient: "from-blue-600 to-indigo-500",
   },
   {
     icon: Sparkles,
     title: "Quality Excellence",
     description:
       "We never compromise on quality. Every line of code, every design decision, and every interaction is crafted with meticulous attention to detail.",
-    gradient: "from-amber-500 to-yellow-500",
+    gradient: "from-sky-500 to-cyan-500",
   },
   {
     icon: TrendingUp,
     title: "Continuous Growth",
     description:
       "We foster a culture of learning and improvement, constantly evolving our skills and processes to provide better value to our clients.",
-    gradient: "from-orange-500 to-orange-600",
+    gradient: "from-blue-500 to-blue-600",
   },
   {
     icon: Award,
     title: "Transparency",
     description:
       "We believe in open communication and honest partnerships. No hidden costs, no surprises—just clear expectations and reliable delivery.",
-    gradient: "from-amber-600 to-orange-600",
+    gradient: "from-indigo-500 to-blue-600",
   },
 ];
 

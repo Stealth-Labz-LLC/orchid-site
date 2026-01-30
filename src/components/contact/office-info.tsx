@@ -9,7 +9,7 @@ export function OfficeInfo() {
 
         <div className="space-y-6">
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-orange-500 to-amber-500 shadow-lg">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-sky-500 shadow-lg">
               <Phone className="h-6 w-6 text-white" />
             </div>
             <div>
@@ -47,7 +47,7 @@ export function OfficeInfo() {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-orange-500 to-red-500 shadow-lg">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-indigo-500 shadow-lg">
               <Clock className="h-6 w-6 text-white" />
             </div>
             <div>

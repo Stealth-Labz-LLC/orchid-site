@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   creator: "Orchid Software",
   publisher: "Orchid Software",
   icons: {
-    icon: '/images/logo/favicon.png',
-    apple: '/images/logo/favicon.png',
+    icon: '/images/logo/favicon-new.svg',
+    apple: '/images/logo/favicon-new.svg',
   },
   manifest: '/manifest.json',
   openGraph: {
@@ -84,7 +84,7 @@ export default function RootLayout({
     name: "Orchid Software",
     description: "Expert software engineering services and SaaS solutions",
     url: siteUrl,
-    logo: `${siteUrl}/images/logo/favicon.png`,
+    logo: `${siteUrl}/images/logo/favicon-new.svg`,
     contactPoint: {
       telephone: "9079003238",
       contactType: "Customer Service",

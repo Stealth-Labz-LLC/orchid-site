@@ -199,7 +199,7 @@ export function ContactForm() {
       <Button
         type="submit"
         size="lg"
-        className="group relative overflow-hidden w-full sm:w-auto bg-gradient-to-r from-orange-600 to-orange-500 hover:shadow-xl hover:scale-105"
+        className="group relative overflow-hidden w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:shadow-xl hover:scale-105"
         disabled={isSubmitting}
       >
         {isSubmitting ? (
@@ -213,7 +213,7 @@ export function ContactForm() {
               <Send className="mr-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               Send Message
             </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </>
         )}
       </Button>

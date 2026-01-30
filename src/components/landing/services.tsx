@@ -17,7 +17,7 @@ const features = [
     title: "Custom Development",
     description:
       "Tailored software solutions built with modern frameworks and best practices for your unique business needs.",
-    gradient: "from-orange-500 to-amber-500",
+    gradient: "from-blue-500 to-sky-500",
   },
   {
     icon: Shield,
@@ -31,21 +31,21 @@ const features = [
     title: "Rapid Deployment",
     description:
       "From MVP to production in weeks, not months. Agile methodology for faster time-to-market.",
-    gradient: "from-orange-600 to-red-500",
+    gradient: "from-blue-600 to-indigo-500",
   },
   {
     icon: Cloud,
     title: "Cloud-Native Architecture",
     description:
       "Scalable infrastructure on AWS, Azure, or GCP. Auto-scaling, high availability, and global CDN.",
-    gradient: "from-amber-500 to-yellow-500",
+    gradient: "from-sky-500 to-cyan-500",
   },
   {
     icon: GitBranch,
     title: "CI/CD Pipeline",
     description:
       "Automated testing, deployment, and monitoring. Continuous integration for reliable releases.",
-    gradient: "from-orange-500 to-orange-600",
+    gradient: "from-blue-500 to-blue-600",
   },
   {
     icon: Database,
@@ -59,21 +59,21 @@ const features = [
     title: "Dedicated Team",
     description:
       "Experienced engineers, designers, and project managers working exclusively on your project.",
-    gradient: "from-amber-600 to-orange-600",
+    gradient: "from-indigo-500 to-blue-600",
   },
   {
     icon: Sparkles,
     title: "AI Integration",
     description:
       "Leverage machine learning and AI capabilities to automate processes and gain insights.",
-    gradient: "from-orange-400 to-amber-500",
+    gradient: "from-blue-400 to-sky-500",
   },
   {
     icon: Globe,
     title: "API Development",
     description:
       "RESTful and GraphQL APIs with comprehensive documentation and seamless third-party integrations.",
-    gradient: "from-yellow-500 to-orange-500",
+    gradient: "from-cyan-500 to-blue-500",
   },
 ];
 
@@ -84,12 +84,12 @@ export function Services() {
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-12">
           <div className="mb-6 inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm shadow-sm">
-            <Sparkles className="mr-2 h-4 w-4 text-orange-500" />
+            <Sparkles className="mr-2 h-4 w-4 text-blue-500" />
             <span className="font-medium text-slate-700">Comprehensive Solutions</span>
           </div>
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
             Everything You Need to Build{" "}
-            <span className="text-orange-500">World-Class Software</span>
+            <span className="text-blue-500">World-Class Software</span>
           </h2>
           <p className="mt-6 text-lg text-slate-600">
             From initial concept to ongoing maintenance, we provide end-to-end software

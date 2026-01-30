@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Header } from "@/components/landing/header";
 import { Footer } from "@/components/landing/footer";
-import { FileText } from "lucide-react";
+import { FileText, ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Terms of Service - Orchid Software",
-  description: "Read our terms of service to understand the rules and regulations governing the use of Orchid Software's services.",
+  description:
+    "Read our terms of service to understand the rules and regulations governing the use of Orchid Software's services under Indian law.",
 };
 
 export default function TermsPage() {
@@ -13,113 +15,265 @@ export default function TermsPage() {
     <main className="min-h-screen">
       <Header />
 
-      <div className="container mx-auto px-4 py-20">
-        <div className="mx-auto max-w-4xl">
-          {/* Header */}
-          <div className="mb-12 text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium">
-              <FileText className="h-4 w-4 text-primary" />
-              <span className="text-primary">Legal</span>
+      {/* Hero Section */}
+      <section className="relative bg-slate-50 pt-24 pb-12 md:pt-32 md:pb-16">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-50 to-transparent opacity-50" />
+
+        <div className="container mx-auto px-4 relative">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full mb-6">
+              <FileText className="w-4 h-4 text-blue-600" />
+              <span className="text-sm font-semibold text-blue-600">Legal</span>
             </div>
-            <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">Terms of Service</h1>
-            <p className="text-muted-foreground">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-          </div>
-
-          {/* Content */}
-          <div className="prose prose-slate dark:prose-invert max-w-none">
-            <section className="mb-8">
-              <h2 className="mb-4 text-2xl font-bold">1. Acceptance of Terms</h2>
-              <p className="mb-4 text-muted-foreground">
-                By accessing and using Orchid Software&apos;s services, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="mb-4 text-2xl font-bold">2. Use License</h2>
-              <p className="mb-4 text-muted-foreground">
-                Permission is granted to temporarily use Orchid Software&apos;s services for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
-              </p>
-              <ul className="mb-4 ml-6 list-disc text-muted-foreground">
-                <li>Modify or copy the materials</li>
-                <li>Use the materials for any commercial purpose or for any public display</li>
-                <li>Attempt to decompile or reverse engineer any software contained in Orchid Software&apos;s services</li>
-                <li>Remove any copyright or other proprietary notations from the materials</li>
-                <li>Transfer the materials to another person or &quot;mirror&quot; the materials on any other server</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="mb-4 text-2xl font-bold">3. Service Description</h2>
-              <p className="mb-4 text-muted-foreground">
-                Orchid Software provides software development and SaaS services. We reserve the right to modify, suspend, or discontinue any aspect of our services at any time without notice.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="mb-4 text-2xl font-bold">4. User Accounts</h2>
-              <p className="mb-4 text-muted-foreground">
-                When you create an account with us, you must provide information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account.
-              </p>
-              <p className="mb-4 text-muted-foreground">
-                You are responsible for safeguarding the password that you use to access the service and for any activities or actions under your password.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="mb-4 text-2xl font-bold">5. Intellectual Property</h2>
-              <p className="mb-4 text-muted-foreground">
-                The service and its original content, features, and functionality are and will remain the exclusive property of Orchid Software and its licensors. The service is protected by copyright, trademark, and other laws.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="mb-4 text-2xl font-bold">6. Payment Terms</h2>
-              <p className="mb-4 text-muted-foreground">
-                Some parts of the service are billed on a subscription basis. You will be billed in advance on a recurring and periodic basis. Billing cycles are set on a monthly or annual basis, depending on the type of subscription plan you select.
-              </p>
-              <p className="mb-4 text-muted-foreground">
-                A valid payment method is required to process the payment for your subscription. You shall provide accurate and complete billing information.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="mb-4 text-2xl font-bold">7. Cancellation and Refunds</h2>
-              <p className="mb-4 text-muted-foreground">
-                You may cancel your subscription at any time through your account settings. Upon cancellation, you will continue to have access to the service until the end of your current billing period.
-              </p>
-              <p className="mb-4 text-muted-foreground">
-                We offer a 30-day money-back guarantee for new subscriptions. If you are not satisfied with our service, you may request a full refund within 30 days of your initial purchase.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="mb-4 text-2xl font-bold">8. Limitation of Liability</h2>
-              <p className="mb-4 text-muted-foreground">
-                In no event shall Orchid Software, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="mb-4 text-2xl font-bold">9. Changes to Terms</h2>
-              <p className="mb-4 text-muted-foreground">
-                We reserve the right to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days&apos; notice prior to any new terms taking effect.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="mb-4 text-2xl font-bold">10. Contact Us</h2>
-              <p className="mb-4 text-muted-foreground">
-                If you have any questions about these Terms, please contact us at:
-              </p>
-              <ul className="ml-6 list-none text-muted-foreground">
-                <li>Email: info@orchidsw.com</li>
-                <li>Phone: +91 9079 00 3238</li>
-                <li>Address: 13 Laxmichak Parsa Bazar Patna</li>
-              </ul>
-            </section>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4">
+              Terms of Service
+            </h1>
+            <p className="text-slate-600">
+              Last updated:{" "}
+              {new Date().toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </p>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Content */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 mb-8"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Home
+            </Link>
+
+            <div className="prose prose-slate max-w-none">
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  1. Introduction and Acceptance
+                </h2>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement
+                  between you and Orchid Software, a company registered and operating in India
+                  with its principal place of business at E47 Chhipura, Near DAV Mode, Parsa
+                  Bazar, Patna, Bihar, India.
+                </p>
+                <p className="text-slate-600 leading-relaxed">
+                  By accessing or using our services, you agree to be bound by these Terms
+                  in accordance with the Indian Contract Act, 1872. If you do not agree to
+                  these Terms, please do not use our services.
+                </p>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  2. Definitions
+                </h2>
+                <ul className="list-disc pl-6 text-slate-600 space-y-2">
+                  <li><strong>&quot;Services&quot;</strong> refers to software development, consulting,
+                  and related services provided by Orchid Software</li>
+                  <li><strong>&quot;Client&quot;</strong> or <strong>&quot;You&quot;</strong> refers to any individual
+                  or entity using our services</li>
+                  <li><strong>&quot;Deliverables&quot;</strong> refers to any software, code, documentation,
+                  or materials produced under our engagement</li>
+                </ul>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  3. Services and Scope
+                </h2>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  Orchid Software provides custom software development, cloud architecture,
+                  data analytics, AI/ML solutions, and related technology consulting services.
+                  The specific scope of work for each engagement shall be defined in a
+                  separate Statement of Work (SOW) or Service Agreement.
+                </p>
+                <p className="text-slate-600 leading-relaxed">
+                  We reserve the right to modify, suspend, or discontinue any aspect of
+                  our services with reasonable notice to affected clients.
+                </p>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  4. Client Obligations
+                </h2>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  As a client, you agree to:
+                </p>
+                <ul className="list-disc pl-6 text-slate-600 space-y-2">
+                  <li>Provide accurate and complete information required for service delivery</li>
+                  <li>Make timely payments as per agreed terms</li>
+                  <li>Respond to queries and provide feedback within reasonable timeframes</li>
+                  <li>Not use our services for any unlawful purpose or in violation of Indian law</li>
+                  <li>Maintain confidentiality of any proprietary information shared with you</li>
+                </ul>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  5. Intellectual Property Rights
+                </h2>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  Unless otherwise specified in a separate agreement:
+                </p>
+                <ul className="list-disc pl-6 text-slate-600 space-y-2 mb-4">
+                  <li>All pre-existing intellectual property remains with its original owner</li>
+                  <li>Custom deliverables created for the client shall be owned by the client
+                  upon full payment</li>
+                  <li>We retain rights to general knowledge, tools, and methodologies developed
+                  during the engagement</li>
+                  <li>Open-source components shall remain subject to their respective licenses</li>
+                </ul>
+                <p className="text-slate-600 leading-relaxed">
+                  Our intellectual property is protected under the Copyright Act, 1957,
+                  the Patents Act, 1970, and the Trade Marks Act, 1999.
+                </p>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  6. Payment Terms
+                </h2>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  Payment terms shall be as specified in the applicable SOW or Service Agreement.
+                  General terms include:
+                </p>
+                <ul className="list-disc pl-6 text-slate-600 space-y-2 mb-4">
+                  <li>All payments shall be made in Indian Rupees (INR) unless otherwise agreed</li>
+                  <li>Payments are subject to applicable GST and other taxes as per Indian tax laws</li>
+                  <li>Invoices are due within 15 days of issuance unless otherwise specified</li>
+                  <li>Late payments may attract interest at 18% per annum</li>
+                </ul>
+                <p className="text-slate-600 leading-relaxed">
+                  We accept payments via bank transfer (NEFT/RTGS/IMPS), UPI, and other
+                  approved payment methods.
+                </p>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  7. Confidentiality
+                </h2>
+                <p className="text-slate-600 leading-relaxed">
+                  Both parties agree to maintain strict confidentiality of all proprietary
+                  information, trade secrets, and business information shared during the
+                  engagement. This obligation shall survive the termination of services
+                  for a period of three (3) years.
+                </p>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  8. Limitation of Liability
+                </h2>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  To the maximum extent permitted by Indian law:
+                </p>
+                <ul className="list-disc pl-6 text-slate-600 space-y-2 mb-4">
+                  <li>Our total liability shall not exceed the fees paid for the specific
+                  service giving rise to the claim</li>
+                  <li>We shall not be liable for any indirect, incidental, special,
+                  consequential, or punitive damages</li>
+                  <li>We are not liable for delays or failures due to Force Majeure events</li>
+                </ul>
+                <p className="text-slate-600 leading-relaxed">
+                  Nothing in these Terms excludes liability that cannot be excluded under
+                  applicable Indian law.
+                </p>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  9. Termination
+                </h2>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  Either party may terminate services:
+                </p>
+                <ul className="list-disc pl-6 text-slate-600 space-y-2">
+                  <li>With 30 days written notice for convenience</li>
+                  <li>Immediately upon material breach by the other party</li>
+                  <li>Immediately if the other party becomes insolvent or enters bankruptcy proceedings</li>
+                </ul>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  10. Dispute Resolution
+                </h2>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  In case of any disputes arising from these Terms:
+                </p>
+                <ul className="list-disc pl-6 text-slate-600 space-y-2">
+                  <li>Parties shall first attempt to resolve disputes through good-faith negotiations</li>
+                  <li>If unresolved within 30 days, disputes shall be referred to arbitration
+                  under the Arbitration and Conciliation Act, 1996</li>
+                  <li>Arbitration shall be conducted in Patna, Bihar in English language</li>
+                  <li>The arbitral award shall be final and binding</li>
+                </ul>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  11. Governing Law and Jurisdiction
+                </h2>
+                <p className="text-slate-600 leading-relaxed">
+                  These Terms shall be governed by and construed in accordance with the
+                  laws of India. Subject to the arbitration clause above, the courts at
+                  Patna, Bihar shall have exclusive jurisdiction over any matters arising
+                  from these Terms.
+                </p>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  12. Amendments
+                </h2>
+                <p className="text-slate-600 leading-relaxed">
+                  We reserve the right to modify these Terms at any time. Material changes
+                  will be communicated with at least 30 days notice. Continued use of our
+                  services after such changes constitutes acceptance of the modified Terms.
+                </p>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  13. Severability
+                </h2>
+                <p className="text-slate-600 leading-relaxed">
+                  If any provision of these Terms is found to be invalid or unenforceable
+                  under Indian law, the remaining provisions shall continue in full force
+                  and effect.
+                </p>
+              </section>
+
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">14. Contact Us</h2>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  For any questions regarding these Terms, please contact us at:
+                </p>
+                <ul className="text-slate-600 space-y-2">
+                  <li>
+                    <strong>Email:</strong> info@orchidsw.com
+                  </li>
+                  <li>
+                    <strong>Phone:</strong> +91 9079 00 3238
+                  </li>
+                  <li>
+                    <strong>Address:</strong> E47 Chhipura, Near DAV Mode, Parsa Bazar, Patna, Bihar, India
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </main>

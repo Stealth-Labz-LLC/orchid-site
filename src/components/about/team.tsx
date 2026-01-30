@@ -72,7 +72,7 @@ export function Team() {
         </div>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
           The People Behind{" "}
-          <span className="bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
             Orchid Software
           </span>
         </h2>

@@ -7,7 +7,7 @@ const processSteps = [
     icon: Lightbulb,
     description:
       "We analyze your requirements, understand your business goals, and create a comprehensive project roadmap.",
-    color: "from-amber-500 to-orange-500",
+    color: "from-sky-500 to-blue-500",
   },
   {
     number: "02",
@@ -15,7 +15,7 @@ const processSteps = [
     icon: Code2,
     description:
       "Our team designs the architecture and builds your solution using modern frameworks and best practices.",
-    color: "from-orange-500 to-red-500",
+    color: "from-blue-500 to-indigo-500",
   },
   {
     number: "03",
@@ -23,7 +23,7 @@ const processSteps = [
     icon: Rocket,
     description:
       "Rigorous testing ensures quality before smooth deployment to production with CI/CD pipelines.",
-    color: "from-red-500 to-pink-500",
+    color: "from-indigo-500 to-violet-500",
   },
   {
     number: "04",
@@ -31,7 +31,7 @@ const processSteps = [
     icon: HeadphonesIcon,
     description:
       "Ongoing maintenance, performance monitoring, and continuous improvements to keep your software running.",
-    color: "from-pink-500 to-purple-500",
+    color: "from-violet-500 to-purple-500",
   },
 ];
 
@@ -41,7 +41,7 @@ export function Process() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <p className="text-sm font-semibold uppercase tracking-wider text-orange-500 mb-3">
+          <p className="text-sm font-semibold uppercase tracking-wider text-blue-500 mb-3">
             Our Process
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
@@ -56,7 +56,7 @@ export function Process() {
         <div className="hidden lg:block">
           <div className="relative">
             {/* Connector Line */}
-            <div className="absolute top-12 left-0 right-0 h-0.5 bg-gradient-to-r from-amber-500 via-orange-500 via-red-500 to-purple-500" />
+            <div className="absolute top-12 left-0 right-0 h-0.5 bg-gradient-to-r from-sky-500 via-blue-500 via-indigo-500 to-purple-500" />
 
             <div className="grid grid-cols-4 gap-8">
               {processSteps.map((step, index) => (
@@ -84,7 +84,7 @@ export function Process() {
         <div className="lg:hidden">
           <div className="relative">
             {/* Vertical Connector Line */}
-            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-amber-500 via-orange-500 via-red-500 to-purple-500" />
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-sky-500 via-blue-500 via-indigo-500 to-purple-500" />
 
             <div className="space-y-8">
               {processSteps.map((step, index) => (

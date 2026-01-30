@@ -15,7 +15,7 @@ export function InlineCTA({ variant = "default" }: InlineCTAProps) {
   if (variant === "compact") {
     return (
       <>
-        <div className="my-12 rounded-2xl border-2 border-primary/20 bg-gradient-to-r from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20 p-8">
+        <div className="my-12 rounded-2xl border-2 border-primary/20 bg-gradient-to-r from-blue-50 to-sky-50 dark:from-blue-950/20 dark:to-sky-950/20 p-8">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div>
               <h3 className="text-2xl font-bold mb-2">
@@ -28,7 +28,7 @@ export function InlineCTA({ variant = "default" }: InlineCTAProps) {
             <div className="flex flex-col gap-3 sm:flex-row">
               <Button
                 size="lg"
-                className="group relative overflow-hidden bg-gradient-to-r from-orange-600 to-orange-500 hover:shadow-xl hover:scale-105"
+                className="group relative overflow-hidden bg-gradient-to-r from-blue-600 to-blue-500 hover:shadow-xl hover:scale-105"
                 asChild
               >
                 <a href="/contact">
@@ -36,7 +36,7 @@ export function InlineCTA({ variant = "default" }: InlineCTAProps) {
                     Start Free Trial
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </a>
               </Button>
               <Button
@@ -49,7 +49,7 @@ export function InlineCTA({ variant = "default" }: InlineCTAProps) {
                   <Calendar className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
                   Book a Demo
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </Button>
             </div>
           </div>
@@ -71,12 +71,12 @@ export function InlineCTA({ variant = "default" }: InlineCTAProps) {
             <Button
               variant="default"
               size="sm"
-              className="group relative overflow-hidden bg-gradient-to-r from-orange-600 to-orange-500 hover:scale-105"
+              className="group relative overflow-hidden bg-gradient-to-r from-blue-600 to-blue-500 hover:scale-105"
               asChild
             >
               <a href="/contact">
                 <span className="relative z-10">Contact Sales</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </a>
             </Button>
             <Button
@@ -86,7 +86,7 @@ export function InlineCTA({ variant = "default" }: InlineCTAProps) {
               onClick={() => setShowDemoModal(true)}
             >
               <span className="relative z-10">Watch Demo</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </Button>
           </div>
         </div>
@@ -98,7 +98,7 @@ export function InlineCTA({ variant = "default" }: InlineCTAProps) {
   // Default variant
   return (
     <>
-      <div className="my-16 rounded-3xl bg-gradient-to-br from-orange-600 via-amber-600 to-orange-700 p-8 text-center text-white shadow-xl md:p-12">
+      <div className="my-16 rounded-3xl bg-gradient-to-br from-blue-600 via-sky-600 to-blue-700 p-8 text-center text-white shadow-xl md:p-12">
         <div className="mx-auto max-w-3xl">
           <div className="mb-4 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium backdrop-blur-sm">
             <Sparkles className="mr-2 h-4 w-4" />

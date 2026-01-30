@@ -54,7 +54,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="site-logo">
           <Image
-            src="/images/logo/orhcid_logo_black_font.svg"
+            src="/images/logo/orchid_logo_new.svg"
             alt="Orchid Software"
             width={120}
             height={120}

@@ -1,15 +1,16 @@
 /**
- * Footer Component Styles
+ * Footer Component Styles - Enterprise Design
  */
 
 /* Footer Container */
 .site-footer {
-    border-top-width: 1px;
-    background-color: #fffef3;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
 }
 
 .footer-container {
   @apply container mx-auto px-4 py-12 lg:py-16;
+  max-width: 1280px;
 }
 
 /* Footer Grid */
@@ -23,73 +24,101 @@
 }
 
 .footer-logo {
-  @apply mb-6 inline-block transition-transform hover:scale-105;
+  @apply mb-5 inline-block transition-opacity hover:opacity-80;
 }
 
 .footer-logo-image {
-  height: 3.2rem;
+  height: 3rem;
   width: auto;
+  min-width: 140px;
 }
 
 .footer-description {
-  @apply mb-4 text-sm text-muted-foreground;
+  @apply mb-5 text-sm leading-relaxed;
+  color: #64748b;
 }
 
 .footer-contact-info {
-  @apply space-y-2 text-sm text-muted-foreground;
+  @apply space-y-3 text-sm;
+  color: #64748b;
 }
 
 .footer-contact-item {
-  @apply flex items-center gap-2;
+  @apply flex items-start gap-3;
 }
 
 .footer-contact-icon {
-  @apply h-4 w-4;
+  @apply h-4 w-4 flex-shrink-0 mt-0.5;
+  color: #94a3b8;
 }
 
 .footer-contact-link {
-  @apply hover:text-foreground;
+  @apply transition-colors;
+  color: #64748b;
+}
+
+.footer-contact-link:hover {
+  color: #3b82f6;
 }
 
 /* Footer Sections */
 .footer-section-heading {
-  @apply mb-4 text-sm font-semibold uppercase tracking-wider;
+  @apply mb-4 text-xs font-semibold uppercase tracking-wider;
+  color: #1e293b;
 }
 
 .footer-section-list {
-  @apply space-y-2 text-sm;
+  @apply space-y-2.5 text-sm;
 }
 
 .footer-link {
-  @apply text-muted-foreground transition-colors hover:text-primary;
+  @apply transition-colors;
+  color: #64748b;
+}
+
+.footer-link:hover {
+  color: #3b82f6;
 }
 
 /* Social Media & Copyright Section */
 .footer-bottom {
-  @apply mt-12 flex flex-col items-center justify-between gap-6 border-t pt-8 md:flex-row;
+  @apply mt-10 flex flex-col items-center justify-between gap-6 border-t pt-8 md:flex-row;
+  border-color: #e2e8f0;
 }
 
 .footer-social-container {
-  @apply flex flex-wrap gap-4;
+  @apply flex flex-wrap gap-3;
 }
 
 .footer-social-icon {
-  @apply flex h-10 w-10 items-center justify-center rounded-lg border bg-background text-muted-foreground transition-all hover:border-primary hover:text-primary hover:shadow-md;
+  @apply flex h-9 w-9 items-center justify-center rounded-md transition-all;
+  background-color: #f8fafc;
+  color: #64748b;
+}
+
+.footer-social-icon:hover {
+  background-color: #eff6ff;
+  color: #3b82f6;
 }
 
 .footer-social-icon-svg {
-  @apply h-5 w-5;
+  @apply h-4 w-4;
 }
 
 /* Copyright */
 .footer-copyright {
-  @apply text-center text-sm text-muted-foreground md:text-right;
+  @apply text-center text-sm md:text-right;
+  color: #94a3b8;
 }
 
-.footer-copyright-text {
-  @apply mt-1;
+.footer-copyright p {
+  color: #94a3b8;
 }
 
 .footer-sitemap-link {
-  @apply hover:text-primary;
+  color: #64748b;
+}
+
+.footer-sitemap-link:hover {
+  color: #3b82f6;
 }

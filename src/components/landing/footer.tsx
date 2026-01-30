@@ -12,7 +12,7 @@ export function Footer() {
           <div className="footer-company-section">
             <Link href="/" className="footer-logo">
               <Image
-                src="/images/logo/orhcid_logo_black_font.svg"
+                src="/images/logo/orchid_logo_new.svg"
                 alt="Orchid Software"
                 width={160}
                 height={160}
@@ -26,7 +26,7 @@ export function Footer() {
             <div className="footer-contact-info">
               <div className="footer-contact-item">
                 <MapPin className="footer-contact-icon" />
-                <span>13 Laxmichak Parsa Bazar Patna </span>
+                <span>E47 Chhipura, Near DAV Mode, Parsa Bazar, Patna</span>
               </div>
               <div className="footer-contact-item">
                 <Phone className="footer-contact-icon" />

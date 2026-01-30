@@ -14,10 +14,10 @@ export function Hero() {
       {/* Animated Gradient Background */}
       <div className="absolute inset-0 bg-slate-900">
         {/* Animated gradient orbs */}
-        <div className="absolute top-0 -left-40 w-96 h-96 bg-orange-500 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob" />
-        <div className="absolute top-0 -right-40 w-96 h-96 bg-amber-500 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob [animation-delay:2s]" />
-        <div className="absolute -bottom-40 left-40 w-96 h-96 bg-orange-600 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob [animation-delay:4s]" />
-        <div className="absolute bottom-0 right-20 w-80 h-80 bg-yellow-500 rounded-full mix-blend-screen filter blur-3xl opacity-25 animate-blob [animation-delay:3s]" />
+        <div className="absolute top-0 -left-40 w-96 h-96 bg-blue-500 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob" />
+        <div className="absolute top-0 -right-40 w-96 h-96 bg-sky-500 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob [animation-delay:2s]" />
+        <div className="absolute -bottom-40 left-40 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob [animation-delay:4s]" />
+        <div className="absolute bottom-0 right-20 w-80 h-80 bg-cyan-500 rounded-full mix-blend-screen filter blur-3xl opacity-25 animate-blob [animation-delay:3s]" />
 
         {/* Grid overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
@@ -30,14 +30,14 @@ export function Hero() {
       <div className="container relative mx-auto px-4 py-20 text-center">
         {/* Badge */}
         <div className="mb-8 inline-flex items-center rounded-full border border-white/10 bg-white/5 backdrop-blur-sm px-4 py-2 text-sm">
-          <span className="mr-2 h-2 w-2 rounded-full bg-orange-500 animate-pulse" />
+          <span className="mr-2 h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
           <span className="text-white/80">Trusted by 500+ companies worldwide</span>
         </div>
 
         {/* Headline */}
         <h1 className="mx-auto max-w-5xl text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
           Build{" "}
-          <span className="bg-gradient-to-r from-orange-400 via-amber-400 to-orange-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-400 via-sky-400 to-blue-500 bg-clip-text text-transparent">
             Powerful Software
           </span>{" "}
           <br className="hidden sm:block" />
@@ -54,7 +54,7 @@ export function Hero() {
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
           <Button
             size="lg"
-            className="bg-orange-500 hover:bg-orange-600 text-white font-semibold shadow-lg shadow-orange-500/25 h-14 px-8 text-base"
+            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold shadow-lg shadow-blue-500/25 h-14 px-8 text-base"
             asChild
           >
             <Link href="/pricing">
@@ -76,17 +76,17 @@ export function Hero() {
         {/* Trust indicators */}
         <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-sm text-slate-400">
           <div className="flex items-center gap-2">
-            <span className="text-orange-500">✓</span>
+            <span className="text-blue-500">✓</span>
             <span>500+ satisfied clients</span>
           </div>
           <div className="hidden sm:block h-4 w-px bg-slate-700" />
           <div className="flex items-center gap-2">
-            <span className="text-orange-500">✓</span>
+            <span className="text-blue-500">✓</span>
             <span>10+ years experience</span>
           </div>
           <div className="hidden sm:block h-4 w-px bg-slate-700" />
           <div className="flex items-center gap-2">
-            <span className="text-orange-500">★★★★</span>
+            <span className="text-blue-500">★★★★</span>
             <span>4.4/5 average rating</span>
           </div>
         </div>

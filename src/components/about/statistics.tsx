@@ -6,14 +6,14 @@ const statistics = [
     value: "500+",
     label: "Clients Served",
     description: "Companies trust us worldwide",
-    gradient: "from-orange-500 to-amber-500",
+    gradient: "from-blue-500 to-sky-500",
   },
   {
     icon: Briefcase,
     value: "1,200+",
     label: "Projects Completed",
     description: "Successful deliveries since 2014",
-    gradient: "from-amber-600 to-orange-600",
+    gradient: "from-indigo-500 to-blue-600",
   },
   {
     icon: TrendingUp,
@@ -27,7 +27,7 @@ const statistics = [
     value: "98%",
     label: "Customer Satisfaction",
     description: "Client happiness rate",
-    gradient: "from-orange-600 to-red-500",
+    gradient: "from-blue-600 to-indigo-500",
   },
 ];
 

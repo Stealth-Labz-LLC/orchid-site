@@ -24,7 +24,7 @@ export function CTA() {
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Button
               size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12 px-8"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold h-12 px-8"
               asChild
             >
               <Link href="/pricing">

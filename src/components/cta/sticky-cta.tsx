@@ -34,7 +34,7 @@ export function StickyCTA() {
   return (
     <>
       <div className="fixed bottom-0 left-0 right-0 z-50 animate-in slide-in-from-bottom-5 duration-500">
-        <div className="border-t bg-gradient-to-r from-orange-600 via-amber-600 to-orange-700 shadow-2xl backdrop-blur-sm">
+        <div className="border-t bg-gradient-to-r from-blue-600 via-sky-600 to-blue-700 shadow-2xl backdrop-blur-sm">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between gap-4 py-4">
               {/* Content */}

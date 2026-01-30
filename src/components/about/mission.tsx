@@ -16,7 +16,7 @@ export function Mission() {
 
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Building the{" "}
-            <span className="bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
               Future of Software
             </span>
           </h1>

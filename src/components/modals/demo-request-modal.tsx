@@ -102,11 +102,11 @@ export function DemoRequestModal({ open, onOpenChange }: DemoRequestModalProps) 
         ) : (
           <>
             <DialogHeader className="space-y-4">
-              <div className="inline-flex w-fit items-center gap-2 rounded-full bg-gradient-to-r from-orange-600 to-orange-500 px-5 py-2 text-sm font-bold text-white shadow-lg">
+              <div className="inline-flex w-fit items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-blue-500 px-5 py-2 text-sm font-bold text-white shadow-lg">
                 <Calendar className="h-5 w-5" />
                 <span>Schedule a Demo</span>
               </div>
-              <DialogTitle className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent leading-tight">
+              <DialogTitle className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent leading-tight">
                 See Orchid Software in Action
               </DialogTitle>
               <DialogDescription className="text-base text-muted-foreground">
@@ -219,7 +219,7 @@ export function DemoRequestModal({ open, onOpenChange }: DemoRequestModalProps) 
               <Button
                 type="submit"
                 size="lg"
-                className="group relative overflow-hidden w-full sm:w-auto bg-gradient-to-r from-orange-600 to-orange-500 hover:shadow-xl hover:scale-105"
+                className="group relative overflow-hidden w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:shadow-xl hover:scale-105"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
@@ -233,7 +233,7 @@ export function DemoRequestModal({ open, onOpenChange }: DemoRequestModalProps) 
                       <Calendar className="mr-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       Send Message
                     </span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </>
                 )}
               </Button>

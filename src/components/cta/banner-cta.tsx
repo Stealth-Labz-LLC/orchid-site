@@ -29,7 +29,7 @@ export function BannerCTA({ variant = "gradient" }: BannerCTAProps) {
 
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
                   Start Building{" "}
-                  <span className="bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
                     Today
                   </span>
                 </h2>
@@ -63,7 +63,7 @@ export function BannerCTA({ variant = "gradient" }: BannerCTAProps) {
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                   <Button
                     size="lg"
-                    className="group relative overflow-hidden bg-gradient-to-r from-orange-600 to-orange-500 hover:shadow-xl hover:scale-105"
+                    className="group relative overflow-hidden bg-gradient-to-r from-blue-600 to-blue-500 hover:shadow-xl hover:scale-105"
                     asChild
                   >
                     <a href="/signup">
@@ -71,7 +71,7 @@ export function BannerCTA({ variant = "gradient" }: BannerCTAProps) {
                         Start Free Trial
                         <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                       </span>
-                      <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </a>
                   </Button>
                   <Button
@@ -84,7 +84,7 @@ export function BannerCTA({ variant = "gradient" }: BannerCTAProps) {
                       <Calendar className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
                       Schedule Demo
                     </span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </Button>
                 </div>
               </div>
@@ -146,7 +146,7 @@ export function BannerCTA({ variant = "gradient" }: BannerCTAProps) {
               <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
                 <Button
                   size="lg"
-                  className="group relative overflow-hidden bg-gradient-to-r from-orange-600 to-orange-500 font-semibold hover:shadow-xl hover:scale-105"
+                  className="group relative overflow-hidden bg-gradient-to-r from-blue-600 to-blue-500 font-semibold hover:shadow-xl hover:scale-105"
                   asChild
                 >
                   <a href="/signup">
@@ -154,7 +154,7 @@ export function BannerCTA({ variant = "gradient" }: BannerCTAProps) {
                       Get Started Free
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </a>
                 </Button>
                 <Button
@@ -167,7 +167,7 @@ export function BannerCTA({ variant = "gradient" }: BannerCTAProps) {
                     <Calendar className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
                     Book a Demo
                   </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </Button>
               </div>
 
@@ -206,7 +206,7 @@ export function BannerCTA({ variant = "gradient" }: BannerCTAProps) {
 
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                 Ready to Transform Your{" "}
-                <span className="bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-400 to-sky-400 bg-clip-text text-transparent">
                   Software Development?
                 </span>
               </h2>
@@ -268,7 +268,7 @@ export function BannerCTA({ variant = "gradient" }: BannerCTAProps) {
   // Default gradient variant
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-br from-orange-600 via-amber-600 to-orange-700">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-sky-600 to-blue-700">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-grid-white/10 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]" />
 

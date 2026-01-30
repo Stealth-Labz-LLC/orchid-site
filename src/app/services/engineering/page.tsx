@@ -144,7 +144,7 @@ export default function EngineeringPrelanderPage() {
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo/orhcid_logo_black_font.svg"
+              src="/images/logo/orchid_logo_new.svg"
               alt="Orchid Software"
               width={140}
               height={40}
@@ -162,7 +162,7 @@ export default function EngineeringPrelanderPage() {
             </Link>
             <Button
               onClick={() => setShowDemoModal(true)}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 font-semibold shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/30 transition-all"
+              className="bg-gradient-to-r from-blue-500 to-blue-600 font-semibold shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 transition-all"
             >
               Get Started
               <ChevronRight className="ml-1 h-4 w-4" />
@@ -175,7 +175,7 @@ export default function EngineeringPrelanderPage() {
       <section className="relative overflow-hidden pt-16">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(249,115,22,0.15),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(59,130,246,0.15),transparent)]" />
 
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
@@ -183,7 +183,7 @@ export default function EngineeringPrelanderPage() {
         <div className="container relative mx-auto px-4 py-20 md:py-28 lg:py-36">
           <div className="mx-auto max-w-4xl text-center">
             {/* Trust Badge */}
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-medium text-orange-700 dark:border-orange-900/50 dark:bg-orange-950/50 dark:text-orange-400">
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700 dark:border-blue-900/50 dark:bg-blue-950/50 dark:text-blue-400">
               <BadgeCheck className="h-4 w-4" />
               <span>Trusted by 500+ Companies Worldwide</span>
             </div>
@@ -192,7 +192,7 @@ export default function EngineeringPrelanderPage() {
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Enterprise Software
               <br />
-              <span className="bg-gradient-to-r from-orange-500 via-orange-600 to-amber-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-500 via-blue-600 to-sky-500 bg-clip-text text-transparent">
                 Engineering Excellence
               </span>
             </h1>
@@ -208,7 +208,7 @@ export default function EngineeringPrelanderPage() {
               <Button
                 size="lg"
                 onClick={() => setShowDemoModal(true)}
-                className="h-14 bg-gradient-to-r from-orange-500 to-orange-600 px-8 text-lg font-semibold shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/30 transition-all"
+                className="h-14 bg-gradient-to-r from-blue-500 to-blue-600 px-8 text-lg font-semibold shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 transition-all"
               >
                 Get Free Consultation
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -258,8 +258,8 @@ export default function EngineeringPrelanderPage() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 dark:bg-orange-950/50">
-                <stat.icon className="h-6 w-6 text-orange-600 dark:text-orange-500" />
+              <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 dark:bg-blue-950/50">
+                <stat.icon className="h-6 w-6 text-blue-600 dark:text-blue-500" />
               </div>
               <div className="text-3xl font-bold text-slate-900 dark:text-white md:text-4xl">
                 {stat.value}
@@ -288,9 +288,9 @@ export default function EngineeringPrelanderPage() {
             {differentiators.map((item, index) => (
               <div
                 key={index}
-                className="group rounded-2xl border border-slate-800 bg-slate-800/50 p-6 transition-all hover:border-orange-500/50 hover:bg-slate-800"
+                className="group rounded-2xl border border-slate-800 bg-slate-800/50 p-6 transition-all hover:border-blue-500/50 hover:bg-slate-800"
               >
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-orange-500 to-orange-600">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-600">
                   <item.icon className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
@@ -304,7 +304,7 @@ export default function EngineeringPrelanderPage() {
       {/* Capabilities Section */}
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-sm font-medium text-orange-700 dark:border-orange-900/50 dark:bg-orange-950/50 dark:text-orange-400">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-sm font-medium text-blue-700 dark:border-blue-900/50 dark:bg-blue-950/50 dark:text-blue-400">
             <Layers className="h-4 w-4" />
             <span>Full-Stack Expertise</span>
           </div>
@@ -320,9 +320,9 @@ export default function EngineeringPrelanderPage() {
           {capabilities.map((capability, index) => (
             <div
               key={index}
-              className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:border-orange-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 dark:hover:border-orange-900"
+              className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:border-blue-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 dark:hover:border-blue-900"
             >
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 shadow-lg shadow-orange-500/20">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 shadow-lg shadow-blue-500/20">
                 <capability.icon className="h-6 w-6 text-white" />
               </div>
               <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
@@ -373,7 +373,7 @@ export default function EngineeringPrelanderPage() {
                   &ldquo;{testimonial.quote}&rdquo;
                 </blockquote>
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-orange-500 to-orange-600 text-sm font-bold text-white">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-600 text-sm font-bold text-white">
                     {testimonial.author.split(" ").map((n) => n[0]).join("")}
                   </div>
                   <div>
@@ -405,7 +405,7 @@ export default function EngineeringPrelanderPage() {
         <div className="mx-auto mt-12 max-w-4xl">
           <div className="relative">
             {/* Connection Line */}
-            <div className="absolute left-8 top-0 hidden h-full w-px bg-gradient-to-b from-orange-500 via-orange-500 to-transparent md:block" />
+            <div className="absolute left-8 top-0 hidden h-full w-px bg-gradient-to-b from-blue-500 via-blue-500 to-transparent md:block" />
 
             <div className="space-y-8">
               {[
@@ -435,7 +435,7 @@ export default function EngineeringPrelanderPage() {
                 },
               ].map((item, index) => (
                 <div key={index} className="relative flex gap-6">
-                  <div className="relative z-10 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 text-xl font-bold text-white shadow-lg shadow-orange-500/25">
+                  <div className="relative z-10 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-xl font-bold text-white shadow-lg shadow-blue-500/25">
                     {item.step}
                   </div>
                   <div className="flex-1 pt-2">
@@ -443,7 +443,7 @@ export default function EngineeringPrelanderPage() {
                       <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
                         {item.title}
                       </h3>
-                      <span className="rounded-full bg-orange-100 px-2.5 py-0.5 text-xs font-medium text-orange-700 dark:bg-orange-950 dark:text-orange-400">
+                      <span className="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-950 dark:text-blue-400">
                         {item.time}
                       </span>
                     </div>
@@ -461,12 +461,12 @@ export default function EngineeringPrelanderPage() {
       {/* Final CTA Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 md:py-28">
         {/* Background Effects */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(249,115,22,0.2),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(59,130,246,0.2),transparent)]" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px]" />
 
         <div className="container relative mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-sm font-medium text-orange-400">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-400">
               <Calendar className="h-4 w-4" />
               <span>Limited Availability</span>
             </div>
@@ -474,7 +474,7 @@ export default function EngineeringPrelanderPage() {
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
               Ready to Build Something
               <br />
-              <span className="bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 to-sky-400 bg-clip-text text-transparent">
                 Extraordinary?
               </span>
             </h2>
@@ -488,7 +488,7 @@ export default function EngineeringPrelanderPage() {
               <Button
                 size="lg"
                 onClick={() => setShowDemoModal(true)}
-                className="h-14 bg-gradient-to-r from-orange-500 to-orange-600 px-8 text-lg font-semibold shadow-xl shadow-orange-500/25 hover:shadow-2xl hover:shadow-orange-500/30 transition-all"
+                className="h-14 bg-gradient-to-r from-blue-500 to-blue-600 px-8 text-lg font-semibold shadow-xl shadow-blue-500/25 hover:shadow-2xl hover:shadow-blue-500/30 transition-all"
               >
                 <Calendar className="mr-2 h-5 w-5" />
                 Schedule Free Consultation
@@ -532,7 +532,7 @@ export default function EngineeringPrelanderPage() {
             <div className="flex items-center gap-6">
               <Link href="/" className="flex items-center">
                 <Image
-                  src="/images/logo/orhcid_logo_black_font.svg"
+                  src="/images/logo/orchid_logo_new.svg"
                   alt="Orchid Software"
                   width={120}
                   height={35}
