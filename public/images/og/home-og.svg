@@ -26,10 +26,10 @@
   <!-- Solid light blue background -->
   <rect width="1200" height="630" fill="#dbeafe"/>
 
-  <!-- Centered Logo Group (scaled 2x from original) -->
-  <g transform="translate(340, 215)">
-    <!-- Orchid flower - exact copy from original logo, scaled 2x -->
-    <g transform="scale(2)">
+  <!-- Centered Logo Group (scaled 3x from original for bigger appearance) -->
+  <g transform="translate(270, 165)">
+    <!-- Orchid flower - exact copy from original logo, scaled 3x -->
+    <g transform="scale(3)">
       <!-- Back left petal -->
       <ellipse cx="28" cy="32" rx="22" ry="28" fill="url(#petal2Grad)" opacity="0.85" transform="rotate(-25, 28, 32)"/>
       <!-- Back right petal -->
@@ -45,10 +45,10 @@
       <circle cx="45" cy="48" r="9" fill="none" stroke="#4B5563" stroke-width="1.5"/>
     </g>
 
-    <!-- Text: "Orchid" - scaled 2x -->
-    <text x="210" y="104" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="80" font-weight="700" fill="#111827">Orchid</text>
+    <!-- Text: "Orchid" - scaled 3x -->
+    <text x="315" y="156" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="120" font-weight="700" fill="#111827">Orchid</text>
 
-    <!-- Text: "SOFTWARE" - scaled 2x -->
-    <text x="214" y="156" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="600" letter-spacing="8" fill="#64748b">SOFTWARE</text>
+    <!-- Text: "SOFTWARE" - scaled 3x -->
+    <text x="321" y="234" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="48" font-weight="600" letter-spacing="12" fill="#64748b">SOFTWARE</text>
   </g>
 </svg>
