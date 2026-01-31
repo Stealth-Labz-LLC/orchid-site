@@ -6,9 +6,18 @@ import { Input } from "@/components/ui/input";
 import { Send, CheckCircle2 } from "lucide-react";
 import { trackFormSubmission } from "@/lib/trackmate";
 
+interface FormErrors {
+  name?: string;
+  email?: string;
+  phone?: string;
+  service?: string;
+  message?: string;
+}
+
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errors, setErrors] = useState<FormErrors>({});
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,8 +27,65 @@ export function ContactForm() {
     message: "",
   });
 
+  // Validation functions
+  const validateName = (name: string): string | undefined => {
+    if (!name.trim()) return "Full name is required";
+    if (name.trim().length < 2) return "Name must be at least 2 characters";
+    if (!/^[a-zA-Z\s]+$/.test(name)) return "Name should only contain letters";
+    return undefined;
+  };
+
+  const validateEmail = (email: string): string | undefined => {
+    if (!email.trim()) return "Email is required";
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) return "Please enter a valid email address";
+    return undefined;
+  };
+
+  const validatePhone = (phone: string): string | undefined => {
+    if (!phone) return undefined; // Phone is optional
+    const digitsOnly = phone.replace(/\D/g, "");
+    if (digitsOnly.length > 0 && digitsOnly.length !== 10) {
+      return "Phone number must be exactly 10 digits";
+    }
+    if (phone && !/^\d+$/.test(phone)) {
+      return "Phone number should only contain digits";
+    }
+    return undefined;
+  };
+
+  const validateMessage = (message: string): string | undefined => {
+    if (!message.trim()) return "Message is required";
+    if (message.trim().length < 10) return "Message must be at least 10 characters";
+    return undefined;
+  };
+
+  const validateService = (service: string): string | undefined => {
+    if (!service) return "Please select a service";
+    return undefined;
+  };
+
+  const validateForm = (): boolean => {
+    const newErrors: FormErrors = {
+      name: validateName(formData.name),
+      email: validateEmail(formData.email),
+      phone: validatePhone(formData.phone),
+      service: validateService(formData.service),
+      message: validateMessage(formData.message),
+    };
+
+    setErrors(newErrors);
+    return !Object.values(newErrors).some((error) => error !== undefined);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Validate form before submitting
+    if (!validateForm()) {
+      return;
+    }
+
     setIsSubmitting(true);
 
     // Track user in TrackMate FIRST - this uses the pixel which auto-includes list_id
@@ -63,10 +129,29 @@ export function ContactForm() {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+
+    // For phone, only allow digits and limit to 10
+    if (name === "phone") {
+      const digitsOnly = value.replace(/\D/g, "").slice(0, 10);
+      setFormData({
+        ...formData,
+        [name]: digitsOnly,
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    }
+
+    // Clear error when user starts typing
+    if (errors[name as keyof FormErrors]) {
+      setErrors({
+        ...errors,
+        [name]: undefined,
+      });
+    }
   };
 
   if (isSubmitted) {
@@ -106,9 +191,11 @@ export function ContactForm() {
             placeholder="John Doe"
             value={formData.name}
             onChange={handleChange}
-            required
-            className="h-11"
+            className={`h-11 ${errors.name ? "border-red-500 focus-visible:ring-red-500" : ""}`}
           />
+          {errors.name && (
+            <p className="text-xs text-red-500">{errors.name}</p>
+          )}
         </div>
 
         <div className="space-y-2">
@@ -122,9 +209,11 @@ export function ContactForm() {
             placeholder="john@company.com"
             value={formData.email}
             onChange={handleChange}
-            required
-            className="h-11"
+            className={`h-11 ${errors.email ? "border-red-500 focus-visible:ring-red-500" : ""}`}
           />
+          {errors.email && (
+            <p className="text-xs text-red-500">{errors.email}</p>
+          )}
         </div>
 
         <div className="space-y-2">
@@ -144,17 +233,22 @@ export function ContactForm() {
 
         <div className="space-y-2">
           <label htmlFor="phone" className="text-sm font-medium">
-            Phone Number
+            Phone Number <span className="text-muted-foreground text-xs">(10 digits)</span>
           </label>
           <Input
             id="phone"
             name="phone"
             type="tel"
-            placeholder="+1 (555) 123-4567"
+            inputMode="numeric"
+            placeholder="9876543210"
             value={formData.phone}
             onChange={handleChange}
-            className="h-11"
+            maxLength={10}
+            className={`h-11 ${errors.phone ? "border-red-500 focus-visible:ring-red-500" : ""}`}
           />
+          {errors.phone && (
+            <p className="text-xs text-red-500">{errors.phone}</p>
+          )}
         </div>
       </div>
 
@@ -167,8 +261,11 @@ export function ContactForm() {
           name="service"
           value={formData.service}
           onChange={handleChange}
-          required
-          className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          className={`flex h-11 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ${
+            errors.service
+              ? "border-red-500 focus-visible:ring-red-500"
+              : "border-input focus-visible:ring-ring"
+          }`}
         >
           <option value="">Select a service...</option>
           <option value="talent-hire">Hire Developer</option>
@@ -178,6 +275,9 @@ export function ContactForm() {
           <option value="tech-support">Startup Tech Support</option>
           <option value="e-comm">E-Commerce (Shopify &amp; WordPress) Customization</option>
         </select>
+        {errors.service && (
+          <p className="text-xs text-red-500">{errors.service}</p>
+        )}
       </div>
 
       <div className="space-y-2">
@@ -191,9 +291,15 @@ export function ContactForm() {
           placeholder="Tell us about your project and how we can help..."
           value={formData.message}
           onChange={handleChange}
-          required
-          className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          className={`flex w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ${
+            errors.message
+              ? "border-red-500 focus-visible:ring-red-500"
+              : "border-input focus-visible:ring-ring"
+          }`}
         />
+        {errors.message && (
+          <p className="text-xs text-red-500">{errors.message}</p>
+        )}
       </div>
 
       <Button
