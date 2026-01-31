@@ -69,9 +69,9 @@ const stats = [
 ];
 
 const milestones = [
-  { year: "2014", title: "Founded", description: "Orchid Software was established with a vision to transform enterprise software development." },
-  { year: "2017", title: "Global Expansion", description: "Expanded operations to serve clients across North America, Europe, and Asia." },
-  { year: "2020", title: "Cloud Excellence", description: "Achieved AWS Advanced Partner status and SOC 2 Type II certification." },
+  { year: "2014", title: "Founded", description: "Orchid Software was established in Patna, Bihar with a vision to transform enterprise software development." },
+  { year: "2017", title: "International Expansion", description: "Started serving clients in the USA, expanding our reach beyond India." },
+  { year: "2020", title: "Growth & Excellence", description: "Scaled our engineering team and achieved consistent project delivery success." },
   { year: "2023", title: "AI Integration", description: "Launched dedicated AI/ML practice to help clients leverage intelligent automation." },
 ];
 
@@ -237,28 +237,28 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-sm font-semibold uppercase tracking-wider text-blue-600 mb-2">
-                Global Presence
+                Our Presence
               </p>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-6">
-                Serving Clients Worldwide
+                Serving Clients in USA & India
               </h2>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                With teams across multiple time zones, we provide round-the-clock support
-                and seamless collaboration for our global client base.
+                Based in Patna, Bihar, India, we provide dedicated support and seamless
+                collaboration for clients across the United States and India.
               </p>
 
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Globe className="w-5 h-5 text-blue-600" />
-                  <span className="text-slate-700">Operations in 3 continents</span>
+                  <span className="text-slate-700">Headquartered in Patna, Bihar, India</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-blue-600" />
-                  <span className="text-slate-700">24/7 support coverage</span>
+                  <span className="text-slate-700">Flexible hours for US & India time zones</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Users className="w-5 h-5 text-blue-600" />
-                  <span className="text-slate-700">Multilingual team members</span>
+                  <span className="text-slate-700">English & Hindi speaking team</span>
                 </div>
               </div>
             </div>
@@ -266,20 +266,20 @@ export default function AboutPage() {
             <div className="bg-slate-100 rounded-xl p-8 text-center">
               <div className="grid grid-cols-2 gap-6">
                 <div className="p-4 bg-white rounded-lg">
-                  <p className="text-3xl font-bold text-slate-900 mb-1">20+</p>
+                  <p className="text-3xl font-bold text-slate-900 mb-1">2</p>
                   <p className="text-sm text-slate-600">Countries Served</p>
                 </div>
                 <div className="p-4 bg-white rounded-lg">
-                  <p className="text-3xl font-bold text-slate-900 mb-1">5</p>
-                  <p className="text-sm text-slate-600">Office Locations</p>
+                  <p className="text-3xl font-bold text-slate-900 mb-1">1</p>
+                  <p className="text-sm text-slate-600">Office Location</p>
                 </div>
                 <div className="p-4 bg-white rounded-lg">
-                  <p className="text-3xl font-bold text-slate-900 mb-1">8</p>
+                  <p className="text-3xl font-bold text-slate-900 mb-1">2</p>
                   <p className="text-sm text-slate-600">Languages Supported</p>
                 </div>
                 <div className="p-4 bg-white rounded-lg">
-                  <p className="text-3xl font-bold text-slate-900 mb-1">24/7</p>
-                  <p className="text-sm text-slate-600">Availability</p>
+                  <p className="text-3xl font-bold text-slate-900 mb-1">IST/EST</p>
+                  <p className="text-sm text-slate-600">Time Zone Coverage</p>
                 </div>
               </div>
             </div>

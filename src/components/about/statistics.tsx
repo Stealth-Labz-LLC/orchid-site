@@ -5,7 +5,7 @@ const statistics = [
     icon: Users,
     value: "500+",
     label: "Clients Served",
-    description: "Companies trust us worldwide",
+    description: "Companies trust us in USA & India",
     gradient: "from-blue-500 to-sky-500",
   },
   {
@@ -70,8 +70,8 @@ export function Statistics() {
             <div className="mt-1 text-sm text-white/80">Expert Engineers</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-white">20+</div>
-            <div className="mt-1 text-sm text-white/80">Countries Served</div>
+            <div className="text-3xl font-bold text-white">USA & India</div>
+            <div className="mt-1 text-sm text-white/80">Service Coverage</div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-white">99.9%</div>
