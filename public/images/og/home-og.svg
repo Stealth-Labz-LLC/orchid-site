@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for smooth orchid petals - same as original logo -->
+    <radialGradient id="petal1Grad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#93C5FD"/>
+      <stop offset="60%" style="stop-color:#60A5FA"/>
+      <stop offset="100%" style="stop-color:#3B82F6"/>
+    </radialGradient>
+    <radialGradient id="petal2Grad" cx="30%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#BFDBFE"/>
+      <stop offset="50%" style="stop-color:#60A5FA"/>
+      <stop offset="100%" style="stop-color:#2563EB"/>
+    </radialGradient>
+    <radialGradient id="petal3Grad" cx="70%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#93C5FD"/>
+      <stop offset="60%" style="stop-color:#3B82F6"/>
+      <stop offset="100%" style="stop-color:#1D4ED8"/>
+    </radialGradient>
+    <radialGradient id="centerGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#374151"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Solid light blue background -->
+  <rect width="1200" height="630" fill="#dbeafe"/>
+
+  <!-- Centered Logo Group (scaled 2x from original) -->
+  <g transform="translate(340, 215)">
+    <!-- Orchid flower - exact copy from original logo, scaled 2x -->
+    <g transform="scale(2)">
+      <!-- Back left petal -->
+      <ellipse cx="28" cy="32" rx="22" ry="28" fill="url(#petal2Grad)" opacity="0.85" transform="rotate(-25, 28, 32)"/>
+      <!-- Back right petal -->
+      <ellipse cx="62" cy="32" rx="22" ry="28" fill="url(#petal3Grad)" opacity="0.85" transform="rotate(25, 62, 32)"/>
+      <!-- Top center petal -->
+      <ellipse cx="45" cy="22" rx="18" ry="24" fill="url(#petal1Grad)" opacity="0.9"/>
+      <!-- Bottom left petal -->
+      <ellipse cx="25" cy="62" rx="20" ry="25" fill="url(#petal2Grad)" opacity="0.9" transform="rotate(35, 25, 62)"/>
+      <!-- Bottom right petal -->
+      <ellipse cx="65" cy="62" rx="20" ry="25" fill="url(#petal3Grad)" opacity="0.9" transform="rotate(-35, 65, 62)"/>
+      <!-- Center dark circle -->
+      <circle cx="45" cy="48" r="14" fill="url(#centerGrad)"/>
+      <circle cx="45" cy="48" r="9" fill="none" stroke="#4B5563" stroke-width="1.5"/>
+    </g>
+
+    <!-- Text: "Orchid" - scaled 2x -->
+    <text x="210" y="104" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="80" font-weight="700" fill="#111827">Orchid</text>
+
+    <!-- Text: "SOFTWARE" - scaled 2x -->
+    <text x="214" y="156" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="600" letter-spacing="8" fill="#64748b">SOFTWARE</text>
+  </g>
+</svg>

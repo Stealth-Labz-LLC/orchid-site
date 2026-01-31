@@ -31,7 +31,7 @@ export const metadata: Metadata = genMeta({
   ],
   url: "/",
   type: "website",
-  image: "/images/home/1.webp",
+  image: "/images/og/home-og.png",
 });
 
 export default function Home() {

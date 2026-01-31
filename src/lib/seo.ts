@@ -16,7 +16,7 @@ export interface SEOConfig {
 // Default OG images from local public/images folder
 export const ogImages = {
   default: "/images/common/common-og.jpeg",
-  home: "/images/home/1.webp",
+  home: "/images/og/home-og.png",
   services: "/images/services/service-og.webp",
   about: "/images/about/about-og.jpeg",
   contact: "/images/contact/contact-og.jpeg",

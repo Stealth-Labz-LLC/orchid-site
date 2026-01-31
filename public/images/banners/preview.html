@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orchid Software - Social Media Banners</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f1f5f9;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      color: #1e40af;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+    .banner-section {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    }
+    .banner-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .banner-title {
+      font-size: 1.25rem;
+      color: #334155;
+    }
+    .banner-size {
+      color: #64748b;
+      font-size: 0.875rem;
+    }
+    .banner-wrapper {
+      overflow-x: auto;
+      background: #e2e8f0;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .banner-wrapper img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .download-btn:hover {
+      background: #1d4ed8;
+    }
+    .instructions {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+    .instructions h2 {
+      color: #1e40af;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+    .instructions ul {
+      color: #475569;
+      margin-left: 20px;
+      line-height: 1.8;
+    }
+    .instructions code {
+      background: #dbeafe;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Orchid Software - Social Media Banners</h1>
+
+    <div class="instructions">
+      <h2>Download Instructions:</h2>
+      <ul>
+        <li><strong>Click "Download PNG"</strong> button to save the image directly</li>
+        <li><strong>Or right-click</strong> on the image and select "Save Image As"</li>
+        <li>All images are ready to use in PNG format</li>
+        <li>SVG source files are also available in the same folder if needed</li>
+      </ul>
+    </div>
+
+    <div class="banner-section">
+      <div class="banner-header">
+        <div>
+          <h2 class="banner-title">LinkedIn Banner</h2>
+          <p class="banner-size">1584 x 396 pixels (Recommended LinkedIn size)</p>
+        </div>
+        <a href="linkedin-banner.png" download class="download-btn">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+          </svg>
+          Download PNG
+        </a>
+      </div>
+      <div class="banner-wrapper">
+        <img src="linkedin-banner.png" alt="LinkedIn Banner">
+      </div>
+    </div>
+
+    <div class="banner-section">
+      <div class="banner-header">
+        <div>
+          <h2 class="banner-title">Facebook Cover</h2>
+          <p class="banner-size">820 x 312 pixels (Recommended Facebook cover size)</p>
+        </div>
+        <a href="facebook-banner.png" download class="download-btn">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+          </svg>
+          Download PNG
+        </a>
+      </div>
+      <div class="banner-wrapper">
+        <img src="facebook-banner.png" alt="Facebook Banner">
+      </div>
+    </div>
+
+    <div class="banner-section">
+      <div class="banner-header">
+        <div>
+          <h2 class="banner-title">OG Image (Home Page)</h2>
+          <p class="banner-size">1200 x 630 pixels (Open Graph / Social sharing)</p>
+        </div>
+        <a href="../og/home-og.png" download class="download-btn">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+          </svg>
+          Download PNG
+        </a>
+      </div>
+      <div class="banner-wrapper">
+        <img src="../og/home-og.png" alt="OG Image">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
