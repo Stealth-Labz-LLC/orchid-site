@@ -1,0 +1,1555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Orchid Software - Get Your Shop on Google Maps</title>
+    <meta name="description" content="Professional websites and Google Business Profile optimization for local shops. Launch in 7-10 days from ₹12,000." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+      :root {
+        --primary: #7c3aed;
+        --primary-dark: #5b21b6;
+        --secondary: #10b981;
+        --secondary-dark: #059669;
+        --dark: #1f2937;
+        --gray-700: #374151;
+        --gray-600: #4b5563;
+        --gray-500: #6b7280;
+        --gray-400: #9ca3af;
+        --gray-200: #e5e7eb;
+        --gray-100: #f3f4f6;
+        --white: #ffffff;
+        --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        line-height: 1.7;
+        color: var(--gray-700);
+        background: var(--white);
+        font-size: 15px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: var(--gradient);
+        padding: 60px 24px;
+        text-align: center;
+        color: var(--white);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .logo {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        opacity: 0.9;
+        margin-bottom: 20px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        letter-spacing: -0.5px;
+      }
+
+      .hero-subtitle {
+        font-size: 20px;
+        opacity: 0.95;
+        margin-bottom: 32px;
+        font-weight: 400;
+      }
+
+      .hero-stats {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+
+      .stat {
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 32px;
+        font-weight: 800;
+        display: block;
+      }
+
+      .stat-label {
+        font-size: 13px;
+        opacity: 0.85;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .hero-cta {
+        display: inline-flex;
+        gap: 12px;
+        margin-top: 32px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 14px 28px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .btn-white {
+        background: var(--white);
+        color: var(--primary);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--white);
+        border: 2px solid rgba(255,255,255,0.5);
+      }
+
+      /* Sections */
+      .section {
+        padding: 60px 0;
+      }
+
+      .section-alt {
+        background: var(--gray-100);
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 48px;
+      }
+
+      .section-label {
+        display: inline-block;
+        background: linear-gradient(135deg, rgba(124,58,237,0.1), rgba(16,185,129,0.1));
+        color: var(--primary);
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 16px;
+      }
+
+      .section-title {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 12px;
+        letter-spacing: -0.3px;
+      }
+
+      .section-desc {
+        font-size: 17px;
+        color: var(--gray-500);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* Problem Section */
+      .problem-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .problem-card {
+        background: var(--white);
+        border: 1px solid var(--gray-200);
+        border-radius: 12px;
+        padding: 24px;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+      }
+
+      .problem-icon {
+        width: 44px;
+        height: 44px;
+        background: #fef2f2;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        flex-shrink: 0;
+      }
+
+      .problem-card h4 {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--dark);
+        margin-bottom: 6px;
+      }
+
+      .problem-card p {
+        font-size: 14px;
+        color: var(--gray-500);
+        line-height: 1.6;
+      }
+
+      /* Solution/Features */
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .feature-card {
+        background: var(--white);
+        border-radius: 16px;
+        padding: 28px;
+        text-align: center;
+        border: 1px solid var(--gray-200);
+        transition: box-shadow 0.3s, transform 0.3s;
+      }
+
+      .feature-card:hover {
+        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        transform: translateY(-4px);
+      }
+
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        background: var(--gradient);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        margin: 0 auto 20px;
+      }
+
+      .feature-card h3 {
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--dark);
+        margin-bottom: 10px;
+      }
+
+      .feature-card p {
+        font-size: 14px;
+        color: var(--gray-500);
+        line-height: 1.6;
+      }
+
+      /* Process */
+      .process-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: relative;
+      }
+
+      .process-step {
+        display: flex;
+        gap: 24px;
+        padding: 24px 0;
+        position: relative;
+      }
+
+      .process-step:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 23px;
+        top: 72px;
+        bottom: 0;
+        width: 2px;
+        background: var(--gray-200);
+      }
+
+      .step-number {
+        width: 48px;
+        height: 48px;
+        background: var(--gradient);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--white);
+        flex-shrink: 0;
+        position: relative;
+        z-index: 1;
+      }
+
+      .step-content {
+        flex: 1;
+        padding-top: 4px;
+      }
+
+      .step-content h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--dark);
+        margin-bottom: 6px;
+      }
+
+      .step-content .duration {
+        display: inline-block;
+        background: rgba(16,185,129,0.1);
+        color: var(--secondary-dark);
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .step-content p {
+        font-size: 15px;
+        color: var(--gray-500);
+      }
+
+      /* Pricing */
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        max-width: 750px;
+        margin: 0 auto;
+      }
+
+      .price-card {
+        background: var(--white);
+        border: 2px solid var(--gray-200);
+        border-radius: 20px;
+        padding: 36px 32px;
+        position: relative;
+        transition: border-color 0.3s;
+      }
+
+      .price-card.featured {
+        border-color: var(--secondary);
+        box-shadow: 0 20px 60px rgba(16,185,129,0.15);
+      }
+
+      .price-badge {
+        position: absolute;
+        top: -14px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--secondary);
+        color: var(--white);
+        padding: 6px 20px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .price-header {
+        text-align: center;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--gray-200);
+        margin-bottom: 24px;
+      }
+
+      .price-name {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 8px;
+      }
+
+      .price-tagline {
+        font-size: 14px;
+        color: var(--gray-500);
+      }
+
+      .price-amount {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 4px;
+        margin: 20px 0;
+      }
+
+      .price-currency {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--gray-500);
+      }
+
+      .price-value {
+        font-size: 48px;
+        font-weight: 800;
+        color: var(--dark);
+        line-height: 1;
+      }
+
+      .price-note {
+        font-size: 13px;
+        color: var(--gray-400);
+      }
+
+      .price-features {
+        list-style: none;
+        margin-bottom: 28px;
+      }
+
+      .price-features li {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 10px 0;
+        font-size: 14px;
+        color: var(--gray-600);
+      }
+
+      .price-features li::before {
+        content: '✓';
+        color: var(--secondary);
+        font-weight: 700;
+        font-size: 16px;
+        flex-shrink: 0;
+      }
+
+      .price-cta {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+        transition: all 0.2s;
+      }
+
+      .price-card .price-cta {
+        background: var(--gray-100);
+        color: var(--dark);
+      }
+
+      .price-card.featured .price-cta {
+        background: var(--gradient);
+        color: var(--white);
+      }
+
+      /* Who Is This For */
+      .audience-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .audience-card {
+        background: var(--white);
+        border: 1px solid var(--gray-200);
+        border-radius: 12px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .audience-icon {
+        width: 48px;
+        height: 48px;
+        background: linear-gradient(135deg, rgba(124,58,237,0.1), rgba(16,185,129,0.1));
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        flex-shrink: 0;
+      }
+
+      .audience-card h4 {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--dark);
+        margin-bottom: 4px;
+      }
+
+      .audience-card p {
+        font-size: 13px;
+        color: var(--gray-500);
+      }
+
+      /* Testimonials */
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+
+      .testimonial-card {
+        background: var(--white);
+        border: 1px solid var(--gray-200);
+        border-radius: 16px;
+        padding: 28px;
+      }
+
+      .testimonial-stars {
+        color: #fbbf24;
+        font-size: 18px;
+        margin-bottom: 16px;
+        letter-spacing: 2px;
+      }
+
+      .testimonial-quote {
+        font-size: 15px;
+        color: var(--gray-600);
+        line-height: 1.7;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .author-avatar {
+        width: 44px;
+        height: 44px;
+        background: var(--gradient);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-weight: 700;
+        font-size: 16px;
+      }
+
+      .author-info h5 {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--dark);
+      }
+
+      .author-info p {
+        font-size: 13px;
+        color: var(--gray-500);
+      }
+
+      /* FAQ */
+      .faq-list {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        background: var(--white);
+        border: 1px solid var(--gray-200);
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 16px;
+      }
+
+      .faq-question {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--dark);
+        margin-bottom: 12px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .faq-question::before {
+        content: 'Q';
+        background: var(--primary);
+        color: var(--white);
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+
+      .faq-answer {
+        font-size: 14px;
+        color: var(--gray-500);
+        line-height: 1.7;
+        padding-left: 36px;
+      }
+
+      /* CTA Section */
+      .cta-section {
+        background: var(--gradient);
+        padding: 60px 24px;
+        text-align: center;
+        color: var(--white);
+      }
+
+      .cta-section h2 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .cta-section p {
+        font-size: 18px;
+        opacity: 0.9;
+        margin-bottom: 32px;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .cta-contact {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+      }
+
+      .contact-item a {
+        color: var(--white);
+        text-decoration: none;
+      }
+
+      /* Footer */
+      .footer {
+        background: var(--dark);
+        color: var(--gray-400);
+        padding: 48px 24px 32px;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 48px;
+        margin-bottom: 40px;
+      }
+
+      .footer-brand h4 {
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .footer-brand p {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      .footer-links h5 {
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 16px;
+      }
+
+      .footer-links ul {
+        list-style: none;
+      }
+
+      .footer-links li {
+        font-size: 14px;
+        padding: 6px 0;
+      }
+
+      .footer-links a {
+        color: var(--gray-400);
+        text-decoration: none;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(255,255,255,0.1);
+        padding-top: 24px;
+        text-align: center;
+        font-size: 13px;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 28px;
+        }
+
+        .hero-subtitle {
+          font-size: 16px;
+        }
+
+        .hero-stats {
+          gap: 24px;
+        }
+
+        .stat-number {
+          font-size: 24px;
+        }
+
+        .section-title {
+          font-size: 24px;
+        }
+
+        .problem-grid,
+        .features-grid,
+        .pricing-grid,
+        .audience-grid,
+        .testimonial-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+      }
+
+      /* Print Styles - PDF Optimized */
+      @media print {
+        * {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+
+        body {
+          font-size: 11px;
+          line-height: 1.4;
+          background: white;
+        }
+
+        .container {
+          max-width: 100%;
+          padding: 0 16px;
+        }
+
+        /* Hero - compact for print */
+        .hero {
+          padding: 30px 20px;
+          page-break-after: avoid;
+        }
+
+        .hero h1 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+
+        .hero-subtitle {
+          font-size: 14px;
+          margin-bottom: 16px;
+        }
+
+        .hero-stats {
+          margin-top: 20px;
+          gap: 30px;
+        }
+
+        .stat-number {
+          font-size: 22px;
+        }
+
+        .hero-cta {
+          margin-top: 20px;
+        }
+
+        .btn {
+          padding: 10px 20px;
+          font-size: 12px;
+        }
+
+        /* Sections - compact */
+        .section {
+          padding: 24px 0;
+        }
+
+        .section-header {
+          margin-bottom: 20px;
+        }
+
+        .section-title {
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+
+        .section-desc {
+          font-size: 12px;
+        }
+
+        .section-label {
+          font-size: 10px;
+          padding: 4px 12px;
+          margin-bottom: 10px;
+        }
+
+        /* Problem grid - 2 columns for print */
+        .problem-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+        }
+
+        .problem-card {
+          padding: 14px;
+          page-break-inside: avoid;
+        }
+
+        .problem-icon {
+          width: 32px;
+          height: 32px;
+          font-size: 16px;
+        }
+
+        .problem-card h4 {
+          font-size: 12px;
+        }
+
+        .problem-card p {
+          font-size: 10px;
+        }
+
+        /* Features - 3 columns, compact */
+        .features-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 12px;
+        }
+
+        .feature-card {
+          padding: 16px;
+          page-break-inside: avoid;
+          box-shadow: none;
+          border: 1px solid #ddd;
+        }
+
+        .feature-card:hover {
+          transform: none;
+          box-shadow: none;
+        }
+
+        .feature-icon {
+          width: 40px;
+          height: 40px;
+          font-size: 20px;
+          margin-bottom: 12px;
+        }
+
+        .feature-card h3 {
+          font-size: 12px;
+          margin-bottom: 6px;
+        }
+
+        .feature-card p {
+          font-size: 10px;
+        }
+
+        /* Process - compact */
+        .process-step {
+          padding: 12px 0;
+          page-break-inside: avoid;
+        }
+
+        .step-number {
+          width: 32px;
+          height: 32px;
+          font-size: 14px;
+        }
+
+        .process-step:not(:last-child)::after {
+          left: 15px;
+          top: 44px;
+        }
+
+        .step-content h4 {
+          font-size: 13px;
+        }
+
+        .step-content .duration {
+          font-size: 10px;
+          padding: 2px 8px;
+        }
+
+        .step-content p {
+          font-size: 11px;
+        }
+
+        /* Pricing - 2 columns, compact */
+        .pricing-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+          max-width: 100%;
+        }
+
+        .price-card {
+          padding: 20px;
+          page-break-inside: avoid;
+          box-shadow: none;
+        }
+
+        .price-header {
+          padding-bottom: 14px;
+          margin-bottom: 14px;
+        }
+
+        .price-name {
+          font-size: 16px;
+        }
+
+        .price-tagline {
+          font-size: 11px;
+        }
+
+        .price-amount {
+          margin: 12px 0;
+        }
+
+        .price-value {
+          font-size: 32px;
+        }
+
+        .price-currency {
+          font-size: 16px;
+        }
+
+        .price-features {
+          margin-bottom: 16px;
+        }
+
+        .price-features li {
+          font-size: 11px;
+          padding: 6px 0;
+        }
+
+        .price-cta {
+          padding: 10px;
+          font-size: 12px;
+        }
+
+        .price-badge {
+          font-size: 9px;
+          padding: 4px 12px;
+          top: -10px;
+        }
+
+        /* Audience - 2 columns */
+        .audience-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+
+        .audience-card {
+          padding: 12px;
+          page-break-inside: avoid;
+        }
+
+        .audience-icon {
+          width: 36px;
+          height: 36px;
+          font-size: 18px;
+        }
+
+        .audience-card h4 {
+          font-size: 12px;
+        }
+
+        .audience-card p {
+          font-size: 10px;
+        }
+
+        /* Testimonials - 2 columns */
+        .testimonial-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+        }
+
+        .testimonial-card {
+          padding: 16px;
+          page-break-inside: avoid;
+          box-shadow: none;
+        }
+
+        .testimonial-stars {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+
+        .testimonial-quote {
+          font-size: 11px;
+          margin-bottom: 12px;
+        }
+
+        .author-avatar {
+          width: 32px;
+          height: 32px;
+          font-size: 12px;
+        }
+
+        .author-info h5 {
+          font-size: 11px;
+        }
+
+        .author-info p {
+          font-size: 10px;
+        }
+
+        /* FAQ - compact */
+        .faq-list {
+          max-width: 100%;
+        }
+
+        .faq-item {
+          padding: 14px;
+          margin-bottom: 10px;
+          page-break-inside: avoid;
+        }
+
+        .faq-question {
+          font-size: 12px;
+          margin-bottom: 8px;
+        }
+
+        .faq-question::before {
+          width: 18px;
+          height: 18px;
+          font-size: 9px;
+        }
+
+        .faq-answer {
+          font-size: 10px;
+          padding-left: 30px;
+        }
+
+        /* CTA - keep together, compact */
+        .cta-section {
+          padding: 30px 20px;
+          page-break-inside: avoid;
+          page-break-before: avoid;
+        }
+
+        .cta-section h2 {
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+
+        .cta-section p {
+          font-size: 13px;
+          margin-bottom: 16px;
+        }
+
+        .cta-contact {
+          margin-top: 20px;
+          gap: 24px;
+        }
+
+        .contact-item {
+          font-size: 12px;
+        }
+
+        /* Footer - keep with CTA, compact */
+        .footer {
+          padding: 24px 20px 16px;
+          page-break-inside: avoid;
+          page-break-before: avoid;
+        }
+
+        .footer-content {
+          grid-template-columns: 2fr 1fr 1fr;
+          gap: 24px;
+          margin-bottom: 20px;
+        }
+
+        .footer-brand h4 {
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+
+        .footer-brand p {
+          font-size: 10px;
+        }
+
+        .footer-links h5 {
+          font-size: 10px;
+          margin-bottom: 10px;
+        }
+
+        .footer-links li {
+          font-size: 10px;
+          padding: 4px 0;
+        }
+
+        .footer-bottom {
+          padding-top: 12px;
+          font-size: 10px;
+        }
+
+        /* Force CTA + Footer to stay together */
+        .cta-section + .footer {
+          page-break-before: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="logo">Orchid Software</div>
+        <h1>Get Your Shop Found<br>on Google Maps</h1>
+        <p class="hero-subtitle">We build mobile-friendly websites and optimize your Google Business Profile<br>so local customers can easily find you</p>
+
+        <div class="hero-cta">
+          <a href="tel:+919079003238" class="btn btn-white">Call Now: +91 90790 03238</a>
+          <a href="mailto:info@orchidsw.com" class="btn btn-outline">Email Us</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">7-10</span>
+            <span class="stat-label">Days to Launch</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">₹12K</span>
+            <span class="stat-label">Starting Price</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">The Challenge</span>
+          <h2 class="section-title">Is Your Shop Invisible Online?</h2>
+          <p class="section-desc">Many local businesses lose customers every day because they can't be found on Google</p>
+        </div>
+
+        <div class="problem-grid">
+          <div class="problem-card">
+            <div class="problem-icon">🔍</div>
+            <div>
+              <h4>Not on Google Maps</h4>
+              <p>Customers search "shops near me" but can't find you</p>
+            </div>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">📱</div>
+            <div>
+              <h4>No Website</h4>
+              <p>Potential customers can't see your products or services online</p>
+            </div>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">📞</div>
+            <div>
+              <h4>Outdated Info</h4>
+              <p>Wrong phone number or hours means missed business</p>
+            </div>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">⭐</div>
+            <div>
+              <h4>No Reviews</h4>
+              <p>Competitors with reviews get chosen over you</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution/Features Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Our Solution</span>
+          <h2 class="section-title">Everything You Need to Get Found</h2>
+          <p class="section-desc">Complete digital presence package designed specifically for local shops</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <h3>Custom Website</h3>
+            <p>Mobile-friendly site with contact form, services, and photo gallery</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📍</div>
+            <h3>Google Business Profile</h3>
+            <p>Complete setup with name, address, hours, categories, and services</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📸</div>
+            <h3>Professional Photos</h3>
+            <p>Guidance for shopfront, product, and team photos that attract customers</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔎</div>
+            <h3>SEO Optimization</h3>
+            <p>Keyword-rich content for better local search rankings</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Training Session</h3>
+            <p>30-60 min handover so you can manage everything yourself</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>24/7 Support</h3>
+            <p>Always available to help with technical questions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">How It Works</span>
+          <h2 class="section-title">Simple 5-Step Process</h2>
+          <p class="section-desc">From zero to fully online in just 7-10 days</p>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <span class="duration">Day 1</span>
+              <h4>Discovery Call</h4>
+              <p>We collect your shop details, photos, services, and business goals</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <span class="duration">Days 2-5</span>
+              <h4>Website Build</h4>
+              <p>Create responsive website with contact form and service pages</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <span class="duration">Days 5-6</span>
+              <h4>Google Setup</h4>
+              <p>Create or claim your Google Business Profile, add categories and services</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <span class="duration">Day 7</span>
+              <h4>Photo Upload</h4>
+              <p>Professional guidance or photoshoot, then upload and tag images</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <span class="duration">Day 8-10</span>
+              <h4>Training & Launch</h4>
+              <p>30-60 minute training session with documentation, then you're live!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Pricing</span>
+          <h2 class="section-title">Affordable Plans for Every Shop</h2>
+          <p class="section-desc">One-time payment. No monthly fees. No hidden costs.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="price-header">
+              <h3 class="price-name">Basic</h3>
+              <p class="price-tagline">Perfect for getting started</p>
+              <div class="price-amount">
+                <span class="price-currency">₹</span>
+                <span class="price-value">12,000</span>
+              </div>
+              <span class="price-note">One-time payment</span>
+            </div>
+            <ul class="price-features">
+              <li>1-page responsive website</li>
+              <li>Google Business Profile setup</li>
+              <li>Photo upload guidance</li>
+              <li>Contact form integration</li>
+              <li>Basic SEO optimization</li>
+              <li>Email support</li>
+            </ul>
+            <a href="tel:+919079003238" class="price-cta">Get Started</a>
+          </div>
+
+          <div class="price-card featured">
+            <div class="price-badge">Most Popular</div>
+            <div class="price-header">
+              <h3 class="price-name">Standard</h3>
+              <p class="price-tagline">Best value for most shops</p>
+              <div class="price-amount">
+                <span class="price-currency">₹</span>
+                <span class="price-value">25,000</span>
+              </div>
+              <span class="price-note">One-time payment</span>
+            </div>
+            <ul class="price-features">
+              <li>2-3 page website with gallery</li>
+              <li>Full Google optimization</li>
+              <li>3 professional photo sessions</li>
+              <li>Google Posts setup</li>
+              <li>Advanced SEO + service listings</li>
+              <li>30-min training session</li>
+              <li>Priority phone support</li>
+            </ul>
+            <a href="tel:+919079003238" class="price-cta">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who Is This For -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Perfect For</span>
+          <h2 class="section-title">Who Is This For?</h2>
+          <p class="section-desc">We specialize in helping local businesses across India</p>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card">
+            <div class="audience-icon">🏪</div>
+            <div>
+              <h4>Retail Shops</h4>
+              <p>Clothing, electronics, grocery, hardware stores</p>
+            </div>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">🍽️</div>
+            <div>
+              <h4>Restaurants & Cafes</h4>
+              <p>Dine-in, takeaway, delivery services</p>
+            </div>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">💇</div>
+            <div>
+              <h4>Salons & Spas</h4>
+              <p>Hair salons, beauty parlors, wellness centers</p>
+            </div>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">🔧</div>
+            <div>
+              <h4>Service Providers</h4>
+              <p>Repair shops, tailors, mechanics, electricians</p>
+            </div>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">🏥</div>
+            <div>
+              <h4>Healthcare</h4>
+              <p>Clinics, pharmacies, diagnostic centers</p>
+            </div>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">📚</div>
+            <div>
+              <h4>Education</h4>
+              <p>Coaching centers, tuition classes, training institutes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Success Stories</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">"The Orchid team helped customers find my shop and products easily. Now I get more walk-ins and phone calls every week. Great investment for any local business!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SJ</div>
+              <div class="author-info">
+                <h5>Shipahi Jee Metal Works</h5>
+                <p>Atwarpur, Patna</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">"Very affordable pricing and quick delivery. They made everything simple and now my business appears on Google Maps. Highly recommended for small shops."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">LB</div>
+              <div class="author-info">
+                <h5>Local Business Owner</h5>
+                <p>Patna, Bihar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">Do I need any technical knowledge?</div>
+            <p class="faq-answer">No! We handle all the technical work. After launch, we provide a simple training session so you can manage your profile easily. No coding or technical skills required.</p>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How long does it take to see results?</div>
+            <p class="faq-answer">Your website and Google profile will be live within 7-10 days. Google Maps visibility typically improves within 2-4 weeks as Google indexes your business.</p>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Are there any monthly fees?</div>
+            <p class="faq-answer">No monthly fees! You pay once and own your website. The only ongoing cost is domain renewal (around ₹1000/year) which you can manage yourself.</p>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What if I already have a Google Business Profile?</div>
+            <p class="faq-answer">Great! We'll optimize your existing profile with better descriptions, photos, categories, and services. We can also help recover or claim profiles you don't have access to.</p>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Do you provide ongoing support?</div>
+            <p class="faq-answer">Yes! We offer 24/7 technical support. Whether you need help updating your hours, adding new photos, or any other changes, we're here to help.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Get More Local Customers?</h2>
+        <p>Join successful local businesses growing with Orchid Software</p>
+
+        <div class="cta-buttons">
+          <a href="tel:+919079003238" class="btn btn-white">Call: +91 90790 03238</a>
+          <a href="mailto:admin@orchidsw.com" class="btn btn-outline">Email: admin@orchidsw.com</a>
+        </div>
+
+        <div class="cta-contact">
+          <div class="contact-item">
+            <span>🌐</span>
+            <a href="https://orchidsw.com">orchidsw.com</a>
+          </div>
+          <div class="contact-item">
+            <span>📍</span>
+            <span>Patna, Bihar, India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h4>Orchid Software</h4>
+            <p>Helping local businesses succeed online with affordable websites and Google optimization. We believe every shop deserves to be found.</p>
+          </div>
+          <div class="footer-links">
+            <h5>Services</h5>
+            <ul>
+              <li>Website Development</li>
+              <li>Google Business Profile</li>
+              <li>Local SEO</li>
+              <li>Photo Guidance</li>
+              <li>Training & Support</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h5>Contact</h5>
+            <ul>
+              <li><a href="tel:+919079003238">+91 90790 03238</a></li>
+              <li><a href="mailto:info@orchidsw.com">info@orchidsw.com</a></li>
+              <li><a href="https://orchidsw.com">orchidsw.com</a></li>
+              <li>Patna, Bihar, India</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Orchid Software. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
