@@ -30,8 +30,8 @@ export function Footer() {
               </div>
               <div className="footer-contact-item">
                 <Phone className="footer-contact-icon" />
-                <a href="tel:+9079003238" className="footer-contact-link">
-                  +91 9079 00 3238
+                <a href="tel:+919153733160" className="footer-contact-link">
+                  +91 9153 73 3160
                 </a>
               </div>
               <div className="footer-contact-item">

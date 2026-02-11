@@ -214,7 +214,7 @@ export function generateLocalBusinessSchema(): object {
     image: `${siteUrl}/images/logo/orchid_logo_new.svg`,
     "@id": siteUrl,
     url: siteUrl,
-    telephone: "+91-9079003238",
+    telephone: "+91-9153733160",
     email: "info@orchidsw.com",
     priceRange: "$$",
     address: {

@@ -87,7 +87,7 @@ export default function RootLayout({
     url: siteUrl,
     logo: `${siteUrl}/images/logo/orchid_logo_new.svg`,
     contactPoint: {
-      telephone: "+91-9079003238",
+      telephone: "+91-9153733160",
       contactType: "Customer Service",
       email: "info@orchidsw.com",
     },

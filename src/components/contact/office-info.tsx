@@ -15,8 +15,8 @@ export function OfficeInfo() {
             <div>
               <h4 className="mb-1 font-semibold">Phone</h4>
               <p className="text-sm text-muted-foreground">
-                <a href="tel:919079003238" className="hover:text-primary">
-                  +91 9079003238
+                <a href="tel:919153733160" className="hover:text-primary">
+                  +91 9153733160
                 </a>
               </p>
               {/* <p className="text-sm text-muted-foreground">

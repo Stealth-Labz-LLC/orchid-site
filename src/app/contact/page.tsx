@@ -161,10 +161,10 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-slate-900 mb-1">Phone</p>
                       <a
-                        href="tel:+919079003238"
+                        href="tel:+919153733160"
                         className="text-sm text-blue-600 hover:text-blue-700"
                       >
-                        +91 9079 00 3238
+                        +91 9153 73 3160
                       </a>
                     </div>
                   </div>
