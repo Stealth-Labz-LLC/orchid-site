@@ -8,13 +8,12 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 export const metadata: Metadata = {
   title: "Case Studies - Client Success Stories | Orchid Software India",
   description:
-    "Explore how Orchid Software has helped businesses transform their operations with custom software solutions. Real results from TrafficAi, Stealth Labz, Shiksha, and more.",
+    "Explore how Orchid Software has helped businesses transform their operations with custom software solutions. Real results from TrafficAi, Shiksha, and more.",
   keywords: [
     "case studies",
     "client success stories",
     "software development portfolio",
     "TrafficAi",
-    "Stealth Labz",
     "Shiksha",
     "enterprise software projects",
   ],
@@ -49,23 +48,6 @@ const caseStudies = [
     ],
     technologies: ["Next.js", "AI/ML", "PostgreSQL", "Redis", "AWS"],
     website: "https://www.trafficai.io",
-  },
-  {
-    slug: "stealthlabz",
-    company: "Stealth Labz",
-    industry: "Affiliate Marketing",
-    logo: "/images/client-company/stealth-black.png",
-    metric: "Sub-100ms Response",
-    title: "Real-Time Data Platform for Affiliate Networks",
-    summary:
-      "Developed a high-performance data platform enabling affiliate networks to capture, enrich with 90+ data points, and monetize anonymous traffic through real-time identity resolution.",
-    results: [
-      "Sub-100ms webhook response time",
-      "90+ data enrichment points",
-      "15+ matching rules for segmentation",
-    ],
-    technologies: ["Node.js", "PostgreSQL", "Redis", "Webhooks", "AWS"],
-    website: "https://portal.stealthlabz.com",
   },
   {
     slug: "shiksha",

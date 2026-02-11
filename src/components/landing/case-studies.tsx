@@ -12,15 +12,6 @@ const caseStudies = [
     slug: "trafficai",
   },
   {
-    industry: "Affiliate Marketing",
-    metric: "Sub-100ms Response",
-    title: "Stealth Labz - Data Platform",
-    description:
-      "Developed a high-performance data platform for affiliate networks to capture, enrich, and monetize anonymous traffic with real-time identity resolution.",
-    href: "/case-studies/stealthlabz",
-    slug: "stealthlabz",
-  },
-  {
     industry: "Education",
     metric: "80% Less Paperwork",
     title: "Shiksha - School Management System",
