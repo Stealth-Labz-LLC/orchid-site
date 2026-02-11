@@ -1,6 +1,5 @@
 import { Header } from "@/components/landing/header";
 import { HeroEnterprise } from "@/components/landing/hero-enterprise";
-import { ClientsEnterprise } from "@/components/landing/clients-enterprise";
 import { ValueProps } from "@/components/landing/value-props";
 import { ServicesEnterprise } from "@/components/landing/services-enterprise";
 import { CaseStudies } from "@/components/landing/case-studies";
@@ -39,7 +38,6 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <HeroEnterprise />
-      <ClientsEnterprise />
       <ValueProps />
       <ServicesEnterprise />
       <CaseStudies />
