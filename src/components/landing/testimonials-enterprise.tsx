@@ -11,16 +11,16 @@ const testimonials = [
   {
     quote:
       "The expertise and professionalism of the Orchid team is unmatched. They understood our complex requirements and delivered a solution that perfectly fit our needs.",
-    author: "Michael Keating",
+    author: "James Caldwell",
     title: "Founder & CTO",
-    company: "Stealth Labz",
+    company: "NexaBridge",
   },
   {
     quote:
       "Working with Orchid was a game-changer for our digital transformation. Their strategic approach helped us achieve 3x faster time-to-market.",
-    author: "Henry Chen",
+    author: "Priya Sharma",
     title: "Director of Technology",
-    company: "Evergreen Evaluations",
+    company: "Crestline Digital",
   },
 ];
 
